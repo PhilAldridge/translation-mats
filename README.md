@@ -5,4 +5,4 @@ The app calls the Microsoft Translation API in Microsoft Azure to get translatio
 
 View the website now at https://elasticmaths.epizy.com/translationmats/
 
-![This is an image](https://elasticmaths.epizy.com/assets/transmat.JPG)
+![This is an image](transmat.JPG)
