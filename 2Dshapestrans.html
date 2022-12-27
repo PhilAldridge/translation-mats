@@ -1,0 +1,391 @@
+var translations = [
+            {
+                "text": "Formes 2D; Quadrat; Rectangle; Triangle; Cercle; Pentàgon; Hexàgon; Paral·lelogram; Trapezi; ",
+                "to": "ca"
+            },
+            {
+                "text": "2D tvary; Náměstí; Obdélník; Trojúhelník; Kruh; Pentagon; Šestiúhelník; Paralelogram; Lichoběžník; ",
+                "to": "cs"
+            },
+            {
+                "text": "Siapiau 2D; Sgwâr; Rectangle; Triongl; Cylch; Pentagon; Hexagon; Parallelogram; Trapezium; ",
+                "to": "cy"
+            },
+            {
+                "text": "2D-former; Plads; rektangel; trekant; Cirkel; Pentagon; Sekskant; parallelogram; Trapezium; ",
+                "to": "da"
+            },
+            {
+                "text": "2D-Formen; Platz; Rechteck; Dreieck; Kreis; Pentagon; Sechseck; Parallelogramm; Trapez; ",
+                "to": "de"
+            },
+            {
+                "text": "2D ބައްޓަންތައް؛ މައިދާނު؛ ރާނާގަނޑު؛ ތްރިލާ؛ ސަރކަލް؛ ޕެންޓަގަން؛ ހެކްސަގޮން؛ ޕެރެލަލްގްރާމް؛ ޓްރެޕީޒިއަމް؛ ",
+                "to": "dv"
+            },
+            {
+                "text": "Σχήματα 2D. Τετράγωνο; Ορθογώνιο; Τρίγωνο; Κύκλος; Το Πεντάγωνο; Εξάγωνο; Παραλληλόγραμμο. Τραπεζίου. ",
+                "to": "el"
+            },
+            {
+                "text": "2D Shapes; Square; Rectangle; Triangle; Circle; Pentagon; Hexagon; Parallelogram; Trapezium; ",
+                "to": "en"
+            },
+            {
+                "text": "Formas 2D; Cuadrado; Rectángulo; Triángulo; Círculo; Pentágono; Hexágono; Paralelogramo; Trapecio; ",
+                "to": "es"
+            },{
+                "text": "2D-vorms; Square; Reghoek; Driehoek; Sirkel; Pentagon; Seshoek; Parallelogram; Trapezium; ",
+                "to": "af"
+            },
+            {
+                "text": "2D ቅርጾች፤ አደባባይ፤ ሬክታንግል፤ ሦስት ማዕዘን፤ ክብ፤ ፔንታጎን፤ ሄክሳጎን፤ ፓራሌሎግራም፤ ትራፕዚየም፤ ",
+                "to": "am"
+            },
+            {
+                "text": "2D الأشكال; مربع. مستطيل. مثلث. دائرة; البنتاغون. سداسي. متوازي الأضلاع. شبه منحرف ",
+                "to": "ar"
+            },
+            {
+                "text": "2ডি আকৃতি; বৰ্গ; আয়তক্ষেত্ৰ; ত্ৰিভুজ; বৃত্ত; পেন্টাগন; ষড়ভুজ; সমান্তৰালগ্ৰাম; ট্ৰেপেজিয়াম; ",
+                "to": "as"
+            },
+            {
+                "text": "2D Sekiller; Kvadrat; Düzbucaqlı; Üçbucaq; Dairə; Pentaqon; Altıbucaqlı; Paraleloqram; Trapezium; ",
+                "to": "az"
+            },
+            {
+                "text": "2D-формалар; Майҙан; Өсмөйөш; Өсмөйөш; Түңәрәк; Пентагон; Гексагон; Параллелограмма; Трапеций; ",
+                "to": "ba"
+            },
+            {
+                "text": "2D фигури; Квадрат; Правоъгълник; Триъгълник; Кръг; Пентагон; Шестоъгълник; Паралелограма; Трапезиум; ",
+                "to": "bg"
+            },
+            {
+                "text": "2D আকৃতি; বর্গক্ষেত্র; আয়তক্ষেত্র; ত্রিভুজ; বৃত্ত; পেন্টাগন; হেক্সাগন; সমান্তরালোগ্রাম; ট্র্যাপিজিয়াম; ",
+                "to": "bn"
+            },
+            {
+                "text": "2D དབྱིབས་ གྲུ་བཞི་ནར་མོ་དང་། གྲུ་བཞི་ནར་མོ་དང་། ཟུར་གསུམ་མ། སྒོར་དབྱིབས་དང་། ཟུར་ལྔའི་ཁང་ཆེན་ ཟུར་ལྔའི་ཟུར་བརྒྱད་དང་། མཉམ་གཤིབ་ཀྱི་རི་མོ་དང་། རྙི་ནང་གི་སྐས་རིམ་དང་། ",
+                "to": "bo"
+            },{
+                "text": "2D form; Ferningur; Rétthyrningur; Þríhyrningur; Hringur; Pentagon; Sexhyrningur; Parallelogram; Trapezium; ",
+                "to": "is"
+            },
+            {
+                "text": "Forme 2D; Quadrato; Rettangolo; Triangolo; Cerchio; Pentagono; Esagono; Parallelogramma; Trapezio; ",
+                "to": "it"
+            },
+            {
+                "text": "2D−ᓂᒃ ᑕᖅᓴᓂᒃ; ᑭᑉᐹᕆᒃᑐᖅ; ᑎᕆᖅᑯᐊᖅ; ᖁᐊᒡᔪᐊᖅᑐᖅ; ᐊᖕᒪᓗᖅᑕᖅᓯ Pentagon; ᕼᐊᒃᓵᓐ; ᐸᐅᕐᖓᖅᑕᖅ; ᓂᒐᖅᑎᑦᑎᔾᔪᑎ; ",
+                "to": "iu"
+            },
+            {
+                "text": "2D Shapes; kippaariktuq; kippaariktuq; quagjuaqtuq; angmaluqsilutit; Pentagon; Hexagon; Parallelogram; qupirruijainiq; ",
+                "to": "iu-Latn"
+            },
+            {
+                "text": "2Dシェイプ;正方形;長方形;三角形;サークル;ペンタゴン;六角形;平行四辺形;台形;",
+                "to": "ja"
+            },
+            {
+                "text": "2D ფორმები; მოედანი; ოთხკუთხედი; სამკუთხედი; წრე; პენტაგონი; ჰექსაგონი; პარალელოგრამა; ტრაპეზიუმი; ",
+                "to": "ka"
+            },
+            {
+                "text": "2D кескіндер; Шаршы; Тіктөртбұрыш; Үшбұрыш; Шеңбер; Пентагон; Гексагон; Параллелограмм; Трапеция; ",
+                "to": "kk"
+            },
+            {
+                "text": "2D រូបរាង; ការ៉េ; ចតុកោណ; ត្រីកោណ; រង្វង់; មន្ទីរបញ្ចកោណ; ហៃសាហ្គន; ប៉ាឡាលេឡូក្រាម; អន្ទាក់; ",
+                "to": "km"
+            },
+            {
+                "text": "2D Shapes; Çargoşe; Çargoşeya çargoşe; Sêgoşe; Çember; Pentagon; Hexagon; Paralelogram; Trapezium ",
+                "to": "kmr"
+            },{
+                "text": "2D фигуры; Площадь; Прямоугольник; Треугольник; Круг; Пентагон; Шестиугольник; Параллелограмм; Трапеция; ",
+                "to": "ru"
+            },
+            {
+                "text": "2D tvary; Námestie; Obdĺžnik; Trojuholník; Kruh; Pentagon; Šesťuholník; Paralelogram; Lichobežník; ",
+                "to": "sk"
+            },
+            {
+                "text": "2D oblike; Kvadrat; Pravokotnik; Trikotnik; Krog; Pentagon; Heksagon; Vzporedni program; Trapezium; ",
+                "to": "sl"
+            },
+            {
+                "text": "2D Shapes; Lotoa; 30;20:20 Triangle; Li'o; Pentagon; Hexagon; Parallelogram; 2002, 12; ",
+                "to": "sm"
+            },
+            {
+                "text": "Qaababka 2D; Square; Qaabdhow; Saddex Xagalka; Goobada; Pentagon; Hexagon; Parallelogram; Trapezium; ",
+                "to": "so"
+            },
+            {
+                "text": "Forma 2D; Katror; Rectangle; Trekëndësh; Rrethi; Pentagon; Heksagon; Paralelogram; Trapezium; ",
+                "to": "sq"
+            },
+            {
+                "text": "2D облици; Квадрат; Правоугаоник; Троугао; Круг; Пентагон; Хексагон; Паралелограм; Трапезијум; ",
+                "to": "sr-Cyrl"
+            },
+            {
+                "text": "2D oblici; Kvadrat; Pravougaonik; Trougao; Krug; Pentagon; Heksagon; Paralelogram; Trapezijum; ",
+                "to": "sr-Latn"
+            },
+            {
+                "text": "2D-former; Fyrkantig; rektangel; triangel; Cirkel; Pentagon; Hexagon; Parallellogram; Trapezium; ",
+                "to": "sv"
+            },{
+                "text": "2D formak; Karratua; Laukizuzena; Triangelua; Zirkulua; Pentagonoa; Hexagonoa; Paralelogramoa; Trapezioa; ",
+                "to": "eu"
+            },
+            {
+                "text": "اشکال 2D; مربع؛ مستطیل؛ مثلث؛ دایره؛ پنتاگون؛ شش ضلعی؛ Parallelogram; تراپازیوم؛ ",
+                "to": "fa"
+            },
+            {
+                "text": "2D-muodot; Neliö; Suorakulmio; Kolmio; Ympyrä; Pentagon, tule tänne. Kuusikulmio; Parallelogram; Trapetsi; ",
+                "to": "fi"
+            },
+            {
+                "text": "2D Hugis; Parisukat; Parihaba; Tatsulok; Bilog; Pentagon; Hexagon; Parallelogram; Trapezium; ",
+                "to": "fil"
+            },
+            {
+                "text": "iTuvaki 2D; Sikuea; Dodonu vakalawa; Muatolu; Wirina; e Dua na Tamata; Exagona; iVakatautauvata; Trapezium; ",
+                "to": "fj"
+            },
+            {
+                "text": "2D Shapes; Square; Rectangle; Triangle; Circle; Farvæl; Hexagon; Parallelogram; Trapezium; ",
+                "to": "fo"
+            },
+            {
+                "text": "Formes 2D; Carré; Rectangle; Triangle; Cercle; Pentagone; Hexagone; Parallélogramme; Trapèze; ",
+                "to": "fr"
+            },
+            {
+                "text": "Formes 2D; Carré; Rectangle; Triangle; Cercle; Pentagone; Hexagone; Parallélogramme; Trapèze; ",
+                "to": "fr-CA"
+            },
+            {
+                "text": "Cruthanna 2T; Cearnóg; Dronuilleog; Triantán; ciorcal; Peinteagán; Heicseagán; Parallelogram; Traipéisiam; ",
+                "to": "ga"
+            },{
+                "text": "2D 모양; 광장; 직사각형; 삼각형; 원; 오각형; 육각형; 평행 사면체; 사다리꼴; ",
+                "to": "ko"
+            },
+            {
+                "text": "شێوەکانی 2D؛ چوارگۆشە؛ لاکێشە؛ سێگۆشە؛ بازنە؛ پێنتاگۆن؛ شەشگۆشە؛ تەریبلۆگرام؛ تراپزیۆم؛ ",
+                "to": "ku"
+            },
+            {
+                "text": "2D формалары; Чарчы; Тик бурчтук; Үч бурчтук; Тегерек; Пентагон; Гексагон; Параллелограмма; Трапезиум; ",
+                "to": "ky"
+            },
+            {
+                "text": "ຮູບຮ່າງ 2D; ສາລະວັນ; Rectangle; ສາມຫຼ່ຽມ; ວົງ; Pentagon; Hexagon; Parallelogram; Trapezium; ",
+                "to": "lo"
+            },
+            {
+                "text": "2D formos; Kvadratas; Stačiakampis; Trikampis; Apskritimas; Pentagonas; Šešiakampis; Lygiagretigrama; Trapecija; ",
+                "to": "lt"
+            },
+            {
+                "text": "2D formas; Kvadrāts; Taisnstūris; Trīsstūris; Aplis; Pentagons; Sešstūris; paralelogramma; Trapece; ",
+                "to": "lv"
+            },
+            {
+                "text": "2D 状。 正方形; 矩形。 三角形; 圜之; 五角大楼; 六边形; 平行四边形; 梯形。 ",
+                "to": "lzh"
+            },
+            {
+                "text": "2D Shapes; Tora-droa; Rectangle; Triangle; Faribolana; Pentagon; Hexagon; Parallelogram; Trapezium; ",
+                "to": "mg"
+            },
+            {
+                "text": "Ngā Hanga Ahu-2; Tapawhā; Tapawhā; Tapatoru; Circle; Taparima; Tapaono; Parallelogram; Trapezium; ",
+                "to": "mi"
+            },{
+                "text": "2D-vormen; Vierkant; Rechthoek; Driehoek; Cirkel; Vijfhoek; Zeshoek; Parallellogram; Trapezium; ",
+                "to": "nl"
+            },
+            {
+                "text": "2ଡି ଆକୃତି; ବର୍ଗ; ଆୟତକ୍ଷେତ୍ର; ତ୍ରିକୋଣ; ବୃତ୍ତ; ପେଣ୍ଟାଗନ୍; ହେକ୍ସାଗୋନ୍; ସମାନ୍ତରାଳ; ଟ୍ରାପେଜିୟମ୍; ",
+                "to": "or"
+            },
+            {
+                "text": "Formas 2D; Cuadrado; Rectángulo; Triángulo; Círculo; Pentágono; Hexágono; Paralelogramo; Trapecio; ",
+                "to": "otq"
+            },
+            {
+                "text": "2D ਸ਼ਕਲਾਂ; ਵਰਗ; ਆਇਤਾਕਾਰ; ਤਿਕੋਣ; ਚੱਕਰ; ਪੈਂਟਾਗਨ; ਹੇਕਸਾਗਨ; ਪੈਰਲਲੋਗਰਾਮ; ਟ੍ਰੈਪੀਜ਼ੀਅਮ; ",
+                "to": "pa"
+            },
+            {
+                "text": "Kształty 2D; Kwadrat; Prostokąt; Trójkąt; Koło; Pentagon; Sześciokąt; Równoległobok; Trapez; ",
+                "to": "pl"
+            },
+            {
+                "text": "اشکال 2D; مربع; مستطیل; مثلث; دایره; پنتاگون؛ هکساگن؛ موازي؛ تراپزیوم؛ ",
+                "to": "prs"
+            },
+            {
+                "text": "2 D شکلونه ؛ مربع ؛ مستطیل ؛ مثلث ؛ دایره ؛ پینتاګون ؛ هګسګن ؛ متوازیالوګرام ؛ تراپټیم ؛ ",
+                "to": "ps"
+            },
+            {
+                "text": "Formas 2D; Quadrado; Retângulo; Triângulo; Círculo; Pentágono; Hexágono; Paralelograma; Trapézio; ",
+                "to": "pt"
+            },
+            {
+                "text": "Formas 2D; Quadrado; Retângulo; Triângulo; Círculo; Pentágono; Hexágono; Paralelograma; Trapézio; ",
+                "to": "pt-PT"
+            },{
+                "text": "2D Isimo; Square; Rectangle; Triangle; Isiyingi; Pentagon; Hexagon; Parallelogram; Trapezium; ",
+                "to": "zu"
+            },{
+                "text": "2டி வடிவங்கள்; சதுரம்; செவ்வகம்; முக்கோணம்; வட்டம்; பென்டகன்; அறுகோணம்; இணைகரம்; ட்ரேபீசியம்; ",
+                "to": "ta"
+            },
+            {
+                "text": "2డి ఆకారాలు; స్క్వేర్; దీర్ఘచతురస్రం; త్రిభుజం; వృత్తం; పెంటగాన్; షడ్భుజి; సమాంతర చతుర్భుజం; ట్రెపీజియం; ",
+                "to": "te"
+            },
+            {
+                "text": "รูปร่าง 2D; สี่เหลี่ยมจัตุรัส; สี่เหลี่ยมผืนผ้า; สามเหลี่ยม; วงกลม; เพนตากอน; หกเหลี่ยม; สี่เหลี่ยมด้านขนาน; รูปสี่เหลี่ยมคางหมู; ",
+                "to": "th"
+            },
+            {
+                "text": "2D ቕርጺ፣ ኣደባባይ፣ ቅኑዕ ርቡዕ ኵርናዕ፣ ስሉስ ኵርናዕ፣ ዑደት፣ ጰንጠቈን፣ ዓሰርተ ውሕጅ፣ ፓራላሎግራም፣ ትራፐዚዩም፣ ",
+                "to": "ti"
+            },
+            {
+                "text": "2D Şekiller; kwadrat; Dörtburçluk; Üçburçluk; Aýlaw; Pentagon; Heksagon; Parallelogramma; Trapezium; ",
+                "to": "tk"
+            },
+            {
+                "text": "\"Qo'noS ta'. be'nI''a' puqloD! SaDtaHvIS leS. luHvam! Qong HoS, peqIm. \"QI'yaH! pe'vIl boSIl. romulu'; ",
+                "to": "tlh-Latn"
+            },
+            {
+                "text": "\"   !   !    \"!   ; ",
+                "to": "tlh-Piqd"
+            },
+            {
+                "text": "2D ngaahi fuo; Sikuea; Lekitengikolo; Tapatolu; Siakaleʻi; Penitakoni; Hexagon; Parallelogram; Trapezium; ",
+                "to": "to"
+            },
+            {
+                "text": "2D Şekiller; Kare; Dikdörtgen; Üçgen; Daire; Pentagon; Hexagon; Paralelkenar; Yamuk; ",
+                "to": "tr"
+            },{
+                "text": "22.A hi'o Te Parau Haapiiraa e te Mau Parau Fafau 20: 10.PH&;PF 10 Rectangle ; Triangle; te menemeneraa ; Pentagon ; Hexagon; parallelogram; \" E te Mau Tane, A Tia Mai i Nia \", Te mau ",
+                "to": "ty"
+            },
+            {
+                "text": "2D شەكلى؛ كۇۋادىرات ؛ تىك تۈزلەڭلىك؛ ئۈچ بۇلۇڭلۇق؛ چەمبىرەك؛ بەش بۇرجەكلىك بىنا؛ گىكتاگون ؛ پاراللېلئوگرامما؛ ترابزي (ترابزي) ؛ ",
+                "to": "ug"
+            },
+            {
+                "text": "2D фігури; Квадратний; Прямокутник; Трикутник; Коло; Пентагон; Шестикутник; Паралелограм; Трапеція; ",
+                "to": "uk"
+            },
+            {
+                "text": "2ڈی شکلیں؛ مربع؛ مستطیل؛ مثلث؛ دائرہ؛ پینٹاگون؛ مسدس؛ متوازی گرام؛ ٹریپیزیئم؛ ",
+                "to": "ur"
+            },
+            {
+                "text": "2D Shakllari; Kvadrat; Toʻrtburchak; Uchburchak; Doira; Pentagon; Olti burchakli; Parallelogramma; Trapezium; ",
+                "to": "uz"
+            },
+            {
+                "text": "Hình dạng 2D; Hình vuông; Hình chữ nhật; Tam giác; Vòng tròn; Lầu Năm Góc; Lục giác; Hình bình hành; Hình thang; ",
+                "to": "vi"
+            },
+            {
+                "text": "Formas 2D; Cuadrado; Rectángulo; Triángulo; Wóoliso'; Pentágono; Hexágono; Paralelogramo; Trapecio; ",
+                "to": "yua"
+            },
+            {
+                "text": "2D形狀; 正方形; 矩形; 三角形; 圓形; 五角大樓; 六邊形; 平行四邊形; 梯形; ",
+                "to": "yue"
+            },
+            {
+                "text": "2D 形状;正方形;矩形;三角形;圆形;五角大楼;六边形;平行四边形;梯形;",
+                "to": "zh-Hans"
+            },{
+                "text": "2D આકારો; ચોરસ; લંબચોરસ; ત્રિકોણ; વર્તુળ; પેન્ટાગોન; ષટ્કોણ; સમાંતરભુજ ચતુષ્કોણ; ટ્રેપેઝિયમ; ",
+                "to": "gu"
+            },
+            {
+                "text": "צורות דו-ממדיות; כיכר; מלבן; משולש; מעגל; הפנטגון; משושה; מקבילית; טרפזיום; ",
+                "to": "he"
+            },
+            {
+                "text": "2 डी आकार; वर्ग; आयत; त्रिभुज; वृत्त; पेंटागन; षट्भुज; समानांतर चतुर्भुज; समलम्ब समलम्ब; ",
+                "to": "hi"
+            },
+            {
+                "text": "2D oblici; Kvadrat; Pravokutnik; Trokut; Krug; Pentagon; Šesterokut; Paralelogram; Trapez; ",
+                "to": "hr"
+            },
+            {
+                "text": "2D-formy; Platz; Rechteck; Dreieck; Kreis; Pentagon; Šěsćeck; Parallelogram; Trapez; ",
+                "to": "hsb"
+            },
+            {
+                "text": "2D Fòm; Kare; Rektang; Triyang; Sèk; Pentagòn; Egzagòn; Parallelogram; Trapezium; ",
+                "to": "ht"
+            },
+            {
+                "text": "2D alakzatok; Négyzet alakú; Téglalap; Háromszög; Kör; Pentagon; Hatszög; Paralelogramma; Trapéz; ",
+                "to": "hu"
+            },
+            {
+                "text": "2D ձեւեր; Հրապարակ; Ռեկտանգլ; Եռանկյուն; Շրջանակ; Պենտագոն; Վեցանկյուն; Պարալլոգրամ; Տրապեզիում; ",
+                "to": "hy"
+            },
+            {
+                "text": "Bentuk 2D; Persegi; Persegi panjang; Segitiga; Lingkaran; Pentagon; Segi enam; Jajaran genjang; Trapesium; ",
+                "to": "id"
+            },{
+                "text": "2ഡി ആകൃതികൾ; ചതുരം; ദീർഘചതുരാകൃതി; ത്രികോണം; വൃത്തം; പെന്റഗണ്; ഹെക്സഗോൺ; പാരലലോഗ്രാം; ട്രപീസിയം; ",
+                "to": "ml"
+            },
+            {
+                "text": "2D хэлбэр дүрс; Талбай; Ректангл; Гурвалжин; Тойрох; Пентагон; Хексагон; Параллелограм; Трапециум; ",
+                "to": "mn-Cyrl"
+            },
+            {
+                "text": "2D ᠬᠡᠯᠪᠡᠷᠢ ᠲᠡᠭᠰᠢ ᠳᠥᠷᠪᠡᠯᠵᠢᠨ ᠬᠡᠯᠪᠡᠷᠢ ᠹᠣᠰᠹᠣᠷ ᠬᠡᠯᠪᠡᠷᠢ ᠭᠤᠷᠪᠠᠯᠵᠢᠨ ᠬᠡᠯᠪᠡᠷᠢ ᠲᠦᠭᠦᠷᠢᠭ᠌ ᠬᠡᠯᠪᠡᠷᠢ ᠲᠠᠪᠤᠯᠵᠢᠨ ᠥᠨᠴᠥᠭ᠍ᠲᠦ ᠠᠰᠠᠷ ᠵᠢᠷᠭᠤᠭᠠᠨ ᠲᠠᠯ᠎ᠠ ᠶᠢᠨ ᠬᠡᠯᠪᠡᠷᠢ ᠵᠡᠷᠭᠡᠴᠡᠭᠡᠪᠡᠷ ᠳᠥᠷᠪᠡᠨ ᠲᠠᠯ᠎ᠠ ᠶᠢᠨ ᠬᠡᠯᠪᠡᠷᠢ ᠵᠡᠭᠦᠳᠦ ",
+                "to": "mn-Mong"
+            },
+            {
+                "text": "2D आकार; चौकोनी; आयत; त्रिकोण; वर्तुळ; पेंटागॉन; हेक्सागॉन; समांतरोग्राम; ट्रॅपेझियम; ",
+                "to": "mr"
+            },
+            {
+                "text": "Bentuk 2D; Dataran; Segi empat tepat; Segitiga; Bulatan; Pentagon; Heksagon; Parallelogram; Trapezium; ",
+                "to": "ms"
+            },
+            {
+                "text": "Forom 2D; Il-Pjazza; Rettangolu; Trijanglu; Ċirku; Pentagon; Eżagonu; Parallelogram; Trapezium; ",
+                "to": "mt"
+            },
+            {
+                "text": "2D Shapes; Square; rectangle; Triangle; vajvoog; Pentagon; Hexagon; Parallelogram; cuab ntxiab; ",
+                "to": "mww"
+            },
+            {
+                "text": "2D Shapes. စတုရန်း၊ ရက်တဂြိုဟ်၊ တြိဂံ၊ စက်ဝိုင်း၊ ပင်တဂေါ့ဂ်ျ၊ ဟက်စ်ဂွန်၊ Parallelogram ထရာပက်ဇီယမ်၊ ",
+                "to": "my"
+            },
+            {
+                "text": "2D-figurer; Firkant; Rektangel; Trekant; Sirkel; Pentagon; Sekskant; Parallellogram; Trapes; ",
+                "to": "nb"
+            }
+        ]

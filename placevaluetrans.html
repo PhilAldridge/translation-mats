@@ -1,0 +1,391 @@
+var translations = [
+            {
+                "text": "Ubungako Bendawo; Izinkulungwane; Amakhulu; Tens; Units; Okweshumi; Amakhulu; Izinkulungwane, Ukuphindaphinda; x10 Hambisa izinodimishi 1 ukuya kwesobunxele; x100 Hambisa izinodimishi 2 ngakwesobunxele; x1000 Hambisa izinodimishi izindawo 3 kwesobunxele; Ukuhlukanisa; ÷10 Hambisa izinodimithi 1 ngakwesokudla; ÷100 Hambisa izinodimimi 2 ngakwesokudla; ÷1000 Hambisa izinodimimiso 3 ngakwesokudla; ",
+                "to": "zu"
+            },{
+                "text": "Valor de lloc; Milers; Centenars; Desenes; Unitats; Dècimes; Centèspotes; Mil·lèsimas; Multiplicar; x10 Moveu els dígits 1 lloc a l'esquerra; x100 Moveu els dígits 2 llocs a l'esquerra; x1000 Moveu els dígits 3 llocs cap a l'esquerra; Dividir; ÷10 Moveu els dígits 1 lloc a la dreta; ÷100 Moveu els dígits 2 llocs a la dreta; ÷1000 Moveu els dígits 3 llocs a la dreta; ",
+                "to": "ca"
+            },
+            {
+                "text": "Hodnota místa; Tisíce; Stovky; Desítky; Jednotky; Desetiny; Setiny; Tisíciny; Násobení; x10 Přesuňte číslice o 1 místo doleva; x100 Přesuňte číslice o 2 místa doleva; x1000 Přesuňte číslice o 3 místa doleva; Dělení; ÷10 Přesuňte číslice o 1 místo doprava; ÷100 Přesuňte číslice o 2 místa doprava; ÷1000 Přesuňte číslice o 3 místa doprava; ",
+                "to": "cs"
+            },
+            {
+                "text": "Gwerth Lle; Miloedd; Cannoedd; Degau; Unedau; Pebyll; Cannoedd; Miloedd; Lluosi; x10 Symudwch y digidau 1 lle i'r chwith; x100 Symudwch y digidau 2 le i'r chwith; x1000 Symudwch y digidau 3 lle i'r chwith; Rhannu; ÷10 Symudwch y digidau 1 lle i'r dde; ÷100 Symudwch y digidau 2 le i'r dde; ÷1000 Symudwch y digidau 3 lle i'r dde; ",
+                "to": "cy"
+            },
+            {
+                "text": "Placere værdi; Tusinder; Hundredvis; Tiere; Enheder; tiendedele; Hundrededele; Tusindedele; Formering; x10 Flyt cifrene 1 sted til venstre; x100 Flyt cifrene 2 steder til venstre; x1000 Flyt cifrene 3 steder til venstre; opdeling; ÷10 Flyt cifrene 1 sted til højre; ÷100 Flyt cifrene 2 steder til højre; ÷1000 Flyt cifrene 3 steder til højre; ",
+                "to": "da"
+            },
+            {
+                "text": "Wert platzieren; Tausende; Hunderte; Zehner; Einheiten; Zehntel; Hundertstel; Tausendstel; Multiplikation; x10 Verschieben Sie die Ziffern um die 1. Stelle nach links; x100 Verschieben Sie die Ziffern um 2 Stellen nach links; x1000 Verschieben Sie die Ziffern um 3 Stellen nach links; Teilen; ÷10 Verschieben Sie die Ziffern um 1 Stelle nach rechts; ÷100 Verschieben Sie die Ziffern um 2 Stellen nach rechts; ÷1000 Verschieben Sie die Ziffern um 3 Stellen nach rechts; ",
+                "to": "de"
+            },
+            {
+                "text": "ޕްލޭސް ވެލިއު؛ ހާސްވެ؛ އެތައް ސަތޭކަ ބަޔަކު؛ ޓެންސް؛ ޔުނިޓް؛ ދިހަވަނަ ގަރުނު؛ ސަތޭކައިންސަތޭކަ؛ ހާސްކަން؛ ގުނައި ގުނަކުރުން؛ x10 ޑިޖިޓް 1 ވަނަ ތަން ވާތް ފަރާތަށް ގެންދިއުން؛ x100 2 ތަން 2 ތަން ވާތް ފަރާތަށް ގެންދިއުން؛ x1000 3 ތަން 3 ތަން ވާތް ފަރާތަށް ގެންދިއުން؛ ބަހާލުން؛ ÷10 10 ޑިޖިޓް 1 ވަނަ ވަނަ 1 ވަނަ 1 ވަނަ 1 ވަނަ 1 ވަނަ 1 ވަނަ 1 ވަނަ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ÷100 2 ވަނަ 2 ތަން ކަނާކަނާ ÷1000 3 3 ތަން 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 ",
+                "to": "dv"
+            },
+            {
+                "text": "Τιμή θέσης. Χιλιάδες; Εκατοντάδες; Δεκάδες; Μονάδες· Δέκατα. Τα εκατοστά. Χιλιοστά. Πολλαπλασιάζεται. x10 Μετακινήστε τα ψηφία 1 προς τα αριστερά. x100 Μετακινήστε τα ψηφία 2 θέσεις προς τα αριστερά. x1000 Μετακινήστε τα ψηφία 3 θέσεις προς τα αριστερά. Διαίρεση; ÷10 Μετακινήστε τα ψηφία 1 προς τα δεξιά. ÷100 Μετακινήστε τα ψηφία 2 θέσεις προς τα δεξιά. ÷1000 Μετακινήστε τα ψηφία 3 θέσεις προς τα δεξιά. ",
+                "to": "el"
+            },
+            {
+                "text": "Place Value; Thousands; Hundreds; Tens; Units; Tenths; Hundredths; Thousandths; Multiplying; x10 Move the digits 1 place to the left; x100 Move the digits 2 places to the left; x1000 Move the digits 3 places to the left; Dividing; ÷10 Move the digits 1 place to the right; ÷100 Move the digits 2 places to the right; ÷1000 Move the digits 3 places to the right; ",
+                "to": "en"
+            },
+            {
+                "text": "Valor de lugar; Miles; Cientos; Decenas; Unidades; Décimas; Centésimas; Milésimas; Multiplicar; x10 Mueva los dígitos 1 lugar a la izquierda; x100 Mueva los dígitos 2 lugares a la izquierda; x1000 Mover los dígitos 3 lugares a la izquierda; Dividir; ÷10 Mueva los dígitos 1 lugar hacia la derecha; ÷100 Mueva los dígitos 2 lugares hacia la derecha; ÷1000 Mueva los dígitos 3 lugares hacia la derecha; ",
+                "to": "es"
+            },{
+                "text": "સ્થાન કિંમત; હજારો; સેંકડો; ટેન્સ; એકમો; દસમા ભાગ; સોમા; હજારમા; ગુણાકાર; x10 1 ના અંકોને ડાબી બાજુએ ખસેડો; x100 અંકોને 2 સ્થાનોએ ડાબી બાજુએ ખસેડો; x1000 અંકોને 3 સ્થાનો ડાબી બાજુએ ખસેડો; વિભાજન; ÷10 1 ના અંકોને જમણી બાજુએ ખસેડો; ÷૧૦૦ અંકોને ૨ સ્થાન પર જમણી બાજુએ ખસેડો; ÷૧૦૦૦ અંકોને ૩ સ્થાન પર જમણી બાજુએ ખસેડો; ",
+                "to": "gu"
+            },
+            {
+                "text": "ערך מקום; אלפים; מאות; עשרות; יחידות; עשיריות; מאיות; אלפיות; כפל; x10 הזז את הספרות 1 מקום שמאלה; x100 הזז את הספרות 2 מקומות שמאלה; x1000 הזז את הספרות 3 מקומות שמאלה; חלוקה; ÷10 הזז את הספרות מקום 1 ימינה; ÷100 הזז את הספרות 2 מקומות ימינה; ÷1000 הזז את הספרות 3 מקומות ימינה; ",
+                "to": "he"
+            },
+            {
+                "text": "प्लेस वैल्यू; हजारों; सैकड़ों; दसियों; इकाइयाँ; दसवें; सौवें; हज़ारवां; गुणा करना; x10 अंकों को बाईं ओर 1 स्थान पर ले जाएँ; x100 अंकों को बाईं ओर 2 स्थानों पर ले जाएँ; x1000 अंकों को बाईं ओर 3 स्थानों पर ले जाएँ; विभाजित करना; ÷10 अंकों को दाईं ओर 1 स्थान पर ले जाएँ; ÷100 अंकों को दाईं ओर 2 स्थानों पर ले जाएँ; ÷1000 अंकों को दाईं ओर 3 स्थानों पर ले जाएँ; ",
+                "to": "hi"
+            },
+            {
+                "text": "Vrijednost mjesta; Tisuće; Stotine; Desetke; Jedinice; Desetine; Stotinke; Tisućinke; Množenje; x10 Pomaknite znamenke za 1 mjesto ulijevo; x100 Pomaknite znamenke za 2 mjesta ulijevo; x1000 Pomaknite znamenke za 3 mjesta ulijevo; Dijeljenje; ÷10 Pomaknite znamenke za 1 mjesto udesno; ÷100 Pomaknite znamenke za 2 mjesta udesno; ÷1000 Pomicanje znamenki za 3 mjesta udesno; ",
+                "to": "hr"
+            },
+            {
+                "text": "Wert pukać; Tausende; Sta; Dźesaćo; Einheiten; Zehntel; Hundertstel; Tausendstel; Multiplikation; Přesuwajće cyfry wokoło 1. městno dolěwa; x100 Přesuwajće cyfry wo 2 městna dolěwa; x1000 Přesuwajće cyfry wo 3 městna dolěwa; dźěl; ÷10 přesuwajće cyfry wo 1 městno doprawa; ÷100 přesuwajće cyfry wo 2 městnje naprawo; ÷1000 přesuwajće cyfry wo 3 městna doprawa; ",
+                "to": "hsb"
+            },
+            {
+                "text": "Mete Valè; Dè milye; Dè santèn; Dis; Inite; Dizyèm; Dè santèn; Milye; Miltipliye; x10 Deplase chif yo 1 plas sou bò gòch; x100 Deplase chif yo 2 kote sou bò gòch; x1000 Deplase chif yo 3 kote sou bò gòch; Divize; ÷10 Deplase chif yo 1 plas sou bò dwat; ÷100 Deplase chif yo 2 kote pou dwat; ÷1000 Deplase chif 3 kote yo bò dwat; ",
+                "to": "ht"
+            },
+            {
+                "text": "Helyérték; Ezrek; Százak; Tízesek; Egységek; Tizedek; Századok; Ezredek; Szorzás; x10 Mozgassa a számjegyeket 1 hellyel balra; x100 Mozgassa a számjegyeket 2 hellyel balra; x1000 Mozgassa a számjegyeket 3 hellyel balra; Osztás; ÷10 Mozgassa a számjegyeket 1 hellyel jobbra; ÷100 Mozgassa a számjegyeket 2 hellyel jobbra; ÷1000 Mozgassa a számjegyeket 3 hellyel jobbra; ",
+                "to": "hu"
+            },
+            {
+                "text": "Տեղադրեք արժեքը; Հազար, Հարիւրներ; Տասնյակներ; Միավորներ; Տասնորդականներ; Հարյուրերորդ. Հազարերորդ, Բազմացում; x10 Թվանշանները տեղափոխել 1-ին տեղով դեպի ձախ; x100 Թվանշանները տեղափոխել ձախից 2 տեղ; x1000 Թվանշանները տեղափոխել ձախից 3 տեղ; Բաժանում; ÷10 թվանշանները տեղափոխել աջ. ÷100 թվանշանները տեղափոխել աջ. ÷1000 թվանշանները տեղափոխել աջ. ",
+                "to": "hy"
+            },
+            {
+                "text": "Nilai Tempat; Ribuan; Ratusan; Puluhan; Satuan; Sepersepuluh; Keseratus; Seperseribu; Mengalikan; x10 Pindahkan tempat digit 1 ke kiri; x100 Pindahkan digit 2 tempat ke kiri; x1000 Pindahkan digit 3 tempat ke kiri; Membagi; ÷10 Pindahkan tempat digit 1 ke kanan; ÷100 Pindahkan digit 2 tempat ke kanan; ÷1000 Pindahkan digit 3 tempat ke kanan; ",
+                "to": "id"
+            },{
+                "text": "Plekwaarde; Duisende; Honderde; Tien; Eenhede; Tiendes; Honderdstes; Duisende; Vermenigvuldiging; x10 Skuif die syfers 1 plek na links; x100 Skuif die syfers 2 plekke na links; x1000 Skuif die syfers 3 plekke na links; Verdeel; ÷10 Skuif die syfers 1 plek na regs; ÷100 Skuif die syfers 2 plekke na regs; ÷1000 Skuif die syfers 3 plekke na regs; ",
+                "to": "af"
+            },
+            {
+                "text": "ዋጋ ያለው ቦታ፤ በሺህ የሚቆጠሩ፤ በመቶዎች የሚቆጠሩ፤ አስር፤ አሃዶች፤ አስራት፤ መቶኛ፤ ሺህ፤ እየበዙ፤ x10 አሃዝ 1 ቦታ ወደ ግራ ማንቀሳቀስ; x100 አሃዝ 2 ቦታዎችን ወደ ግራ ማንቀሳቀስ; x1000 አሃዳሪዎቹን ወደ ግራ 3 ቦታዎች ማንቀሳቀስ፤ መከፋፈል፤ ÷10 አሃዝ 1 ቦታ ወደ ቀኝ ማንቀሳቀስ፤ ÷100 አሃዝ 2 ቦታዎችን ወደ ቀኝ ማንቀሳቀስ፤ ÷1000 አሃዝ 3 ቦታዎችን ወደ ቀኝ ማንቀሳቀስ፤ ",
+                "to": "am"
+            },
+            {
+                "text": "القيمة المكانية؛ الآلاف. المئات. عشرات. الوحدات; الأعشار. المئات. الألف. التكاثر. x10 حرك الأرقام 1 إلى اليسار ؛ x100 حرك الأرقام 2 إلى اليسار ؛ x1000 نقل الأرقام 3 أماكن إلى اليسار ؛ التقسيم؛ ÷10 حرك الأرقام 1 في مكانها إلى اليمين ؛ ÷100 حرك الأرقام 2 إلى اليمين ؛ ÷1000 حرك الأرقام 3 أماكن إلى اليمين ؛ ",
+                "to": "ar"
+            },
+            {
+                "text": "স্থান মান; হাজাৰ; শত; দহ; একক; দশম; শতশত; হাজাৰতম; পূৰণ কৰা হৈছে; এক্স10 অংক1 স্থানবাওঁফালে স্থানান্তৰ কৰক; এক্স100 অংক 2 স্থান বাওঁফালে স্থানান্তৰ কৰক; এক্স1000 অংক3 স্থান বাওঁফালে স্থানান্তৰ কৰক; বিভাজন; ÷10 অংক 1 স্থান সোঁফালে স্থানান্তৰ কৰক; ÷100 অংক 2 স্থান সোঁফালে স্থানান্তৰ কৰক; ÷1000 অংক3 স্থান সোঁফালে স্থানান্তৰ কৰক; ",
+                "to": "as"
+            },
+            {
+                "text": "Qiymət; Minlər; Yüzlər; Onlar; Vahidlər; Onuncu; Yüzlər; Minilliklər; Çoxaltmaq; x10 Ədədləri 1-ci yeri sola doğru hərəkət etdir; x100 Ədədləri 2 yerə sola doğru hərəkət etdir; x1000 Ədədləri 3 yer sola doğru hərəkət etdir; Bölmək; ÷10 Ədədləri 1-ci yeri sağa doğru hərəkət etdir; ÷100 Ədədləri 2 yerə sağa doğru hərəkət etdir; ÷1000 Rəqəm 3 yeri sağa doğru hərəkət etdir; ",
+                "to": "az"
+            },
+            {
+                "text": "Урын ҡиммәте; Меңдәр; Йөҙҙәр; Тиҫтәләрсә; Берәмектәр; Унынсылары; Йөҙҙәрсә; Меңәр йылдар; Ҡабатлау; x10 Һандарҙы 1 урын һулға күсерергә; x100 Һандарҙы 2 урын һулға күсерергә; x1000 Һандарҙы һулға 3 урынға күсерергә; Бүлеү; ÷10 Һандарҙы уңға 1 урынға күсерергә; ÷100 һандарҙы уңға 2 урынға күсерергә; ÷1000 һандарҙы уңға 3 урынға күсерергә; ",
+                "to": "ba"
+            },
+            {
+                "text": "Място Стойност; Хиляди; Стотици; Десетки; Единици; Десети; Стотни; Хилядни; Умножаване; x10 Преместете цифрите 1 място наляво; x100 Преместете цифрите 2 места наляво; x1000 Преместете цифрите 3 места наляво; Разделяне; ÷10 Преместете цифрите 1 място надясно; ÷100 Преместете цифрите 2 места надясно; ÷1000 Преместете цифрите 3 места надясно; ",
+                "to": "bg"
+            },
+            {
+                "text": "স্থান মান; হাজার হাজার; শত শত; দশ; ইউনিট; দশমাংশ; শততম; হাজার হাজার; গুণ করা; x10 সংখ্যাগুলি 1 টি বাম দিকে সরান; x100 সংখ্যাগুলি 2 টি বাম দিকে সরান; x1000 সংখ্যাগুলি 3 টি স্থান বামে সরান; বিভাজন; ÷10 সংখ্যাগুলি 1 টি ডানদিকে সরান; ÷100 সংখ্যাগুলি 2 টি স্থান ডানদিকে সরান; ÷1000 সংখ্যাগুলি 3 টি স্থান ডানদিকে সরান; ",
+                "to": "bn"
+            },
+            {
+                "text": "ས་གནས་ཀྱི་རིན་ཐང་། སྟོང་ཕྲག་མང་པོ་ཡོད་པ་དང་ བརྒྱ་ཕྲག་ཁ་ཤས་ བཅུ་ཕྲག་ཁ་ཤས་ སྡེ་ཚན་དང་། བཅུ་ཆ་བཅུ་པ། བརྒྱ་ཕྲག་བརྒྱ་ཐམ་པ་དང་། སྟོང་ཕྲག་མང་པོ་ཡོད། ལྡབ་འགྱུར་གྱིས་འཕར་བ། x 10 གྲངས་ཀ་1གནས་གཡོན་ཕྱོགས་སུ་སྤོ་དགོས། x100ས་གྲངས་ཀ་2སོ་གཡོན་ཕྱོགས་སུ་སྤོ་དགོས། x 1000སྐར་མ་3གྱི་གཡོན་ཕྱོགས་སུ་སྤོ་དགོས། བགོ་བཤའ་རྒྱག་པ། ÷10ཡི་གྲངས་ཀ་དེ་གཡས་ཕྱོགས་སུ་སྤོས་པ་དང་། ÷100ཡི་གྲངས་ཀ་དེ་གཡས་ཕྱོགས་སུ་སྤོས་པ་དང་། ÷1000གིས་གྲངས་ཀ་3དེ་གཡས་ཕྱོགས་སུ་སྤོས་པ་དང་། ",
+                "to": "bo"
+            },{
+                "text": "Значение места; Тысячи; Сотни; Десятки; Единицы; Десятые доли; Сотые; Тысячные; Умножение; x10 Переместите цифры на 1 место влево; x100 Переместите цифры на 2 места влево; x1000 Переместите цифры на 3 места влево; Деление; ÷10 Переместите цифры на 1 место вправо; ÷100 Переместите цифры на 2 места вправо; ÷1000 Переместите цифры на 3 места вправо; ",
+                "to": "ru"
+            },
+            {
+                "text": "Hodnota umiestnenia; Tisíce; Stovky; Desiatky; Jednotky; Desatiny; Stotiny; Tisíciny; Násobenie; x10 Posuňte číslice o 1 miesto doľava; x100 Presuňte číslice o 2 miesta doľava; x1000 Presuňte číslice o 3 miesta doľava; Rozdelenie; ÷10 Presuňte číslice o 1 miesto doprava; ÷100 Posuňte číslice o 2 miesta doprava; ÷1000 Posuňte číslice o 3 miesta doprava; ",
+                "to": "sk"
+            },
+            {
+                "text": "Vrednost mesta; Na tisoče; Stotine; Desetke; enote; Deseti; Stoti; Tisoči; Pomnozitev; x10 Premaknite števke 1 mesto na levo; x100 Premaknite številke 2 mesta na levo; x1000 Premaknite številke 3 mesta na levo; Delitev; ÷10 Premaknite števke 1 mesto na desno; ÷100 Premaknite števke 2 mest na desno; ÷1000 Premaknite števke 3 mesta na desno; ",
+                "to": "sl"
+            },
+            {
+                "text": "Tulaga Faatauaina o le Tulaga Faatauaina; E faitau afe; E faitau selau; Sefulu; Iunite; Lona sefulu; selau; Afe; Faateleina; x10 Faasolo fuainumera 1 nofoaga i le itu tauagavale; x100 Faasolo fuainumera 2 nofoaga i le itu tauagavale; x1000 Faasolo ia fuainumera 3 nofoaga i le itu tauagavale; Vaeluaina; ÷10 Faasolo fuainumera 1 i le itu taumatau; ÷100 Faasolo ia fuainumera 2 nofoaga i le itu taumatau; ÷1000 Faasolo ia fuainumera 3 nofoaga i le itu taumatau; ",
+                "to": "sm"
+            },
+            {
+                "text": "Qiimaha Place; Kun; Boqolaal; Tobanaan; Cutubyada; Tobnaadna; Boqolaal; Kumanaad; Isku badisid; x10 U dhaqaajiso lambarrada 1 meel bidixda; x100 U dhaqaajiso lambarrada 2 meelaha bidixda; x1000 U dhaqaajiso lambarrada 3 meelaha bidix; Kala qaybin; ÷10 U dhaqaajiso lambarrada 1 meel midig; ÷100 U dhaqaajiyaan lambarrada 2 meelood xagga midig; ÷1000 U dhaqaajiso lambarrada 3 meelood xagga midig; ",
+                "to": "so"
+            },
+            {
+                "text": "Vlera e vendit; Me mijëra; Me qindra. Dhjeta; Njësitë; Të dhjetat; Të qindat; Të mijëta; Shumëfishimi; x10 Lëvizi shifrat 1 vend në të majtë; x100 Lëvizi shifrat 2 vende në të majtë; x1000 Lëvizi shifrat 3 vende në të majtë; Ndarja; ÷10 Lëvizi shifrat 1 vend në të djathtë; ÷100 Lëvizi shifrat 2 vende në të djathtë; ÷1000 Lëvizi shifrat 3 vende në të djathtë; ",
+                "to": "sq"
+            },
+            {
+                "text": "Вредност места; Хиљаде; Стотине; Десетке; Јединице; Десетине; Стотине; Хиљадите; Множење; x10 Помери цифре за 1 место налево; x100 Помери цифре за 2 места налево; x1000 Помери цифре за 3 места улево; Дељење; ÷ 10 Помери цифре за 1 место надесно; ÷ 100 Померање цифара за 2 места надесно; ÷ 1000 Помери цифре за 3 места удесно; ",
+                "to": "sr-Cyrl"
+            },
+            {
+                "text": "Vrednost mesta; Hiljade; Stotine; Desetke; Jedinice; Desetine; Stotine; Hiljadite; Množenje; x10 Pomeri cifre za 1 mesto nalevo; x100 Pomeri cifre za 2 mesta nalevo; x1000 Pomeri cifre za 3 mesta ulevo; Deljenje; ÷10 Pomeri cifre za 1 mesto nadesno; ÷100 Pomeranje cifara za 2 mesta nadesno; ÷1000 Pomeri cifre za 3 mesta udesno; ",
+                "to": "sr-Latn"
+            },
+            {
+                "text": "Placera värde; Tusentals; Hundratals; Tiotals; Enheter; Tiondelar; Hundradels; Tusenlappar; multiplicera; x10 Flytta siffrorna 1 plats åt vänster; x100 Flytta siffrorna 2 platser till vänster; x1000 Flytta siffrorna 3 platser till vänster; Delning; ÷10 Flytta siffrorna 1 plats åt höger; ÷100 Flytta siffrorna 2 platser åt höger; ÷1000 Flytta siffrorna 3 platser åt höger; ",
+                "to": "sv"
+            },{
+                "text": "Gildi staðsetningar; Þúsundir; Hundruð; Tugir; Einingar; Tíundir; Hundraðshlutar; Þúsundþúsund; Margföldun; x10 Færðu tölustafina 1 stað til vinstri; x100 Færa tölustafina 2 staði til vinstri; x1000 Færa tölustafina 3 staði til vinstri; Að deila; ÷10 Færðu tölustafina 1 stað til hægri; ÷100 Færa tölustafina 2 staði til hægri; ÷1000 Færa tölustafina 3 staði til hægri; ",
+                "to": "is"
+            },
+            {
+                "text": "Valore del luogo; Migliaia; Centinaia; Decine; Unità; Decimi; Centesimi; Millesimi; Moltiplicazione; x10 Spostare le cifre 1 posto a sinistra; x100 Spostare le cifre di 2 posizioni a sinistra; x1000 Spostare le cifre di 3 posizioni a sinistra; Dividere; ÷10 Spostare le cifre 1 a destra; ÷100 Spostare le cifre 2 punti a destra; ÷1000 Spostare le cifre di 3 punti a destra; ",
+                "to": "it"
+            },
+            {
+                "text": "ᐃᓂᒋᔭᐅᔫᑉ ᐊᑭᖓ; ᑕᐅᓴᖏᓐᓃᑦᑐᑦ; ᕼᐊᓐᓇᓚᐃᑦ; ᖁᓖᓐᓇᐃᑦ; ᐃᒡᓗᐃᑦ; ᑐᐲᑦ; ᕼᐊᓐᓇᓚᐃᑦ; 1000-ᖏᓐᓃᑦᑐᑦ; ᐊᒥᓱᕈᖅᑎᕆᓂᖅ; x10 ᓅᓪᓗᒋᑦ ᓈᓴᐅᑎᑦ 1 ᓴᐅᒥᖕᒧᑦ; x100 ᓅᓪᓗᒋᑦ ᓈᓴᐅᑎᑦ 2 ᐃᓂᐅᑏᒃ ᓴᐅᒥᖕᒧᑦ; x1000 ᓅᓪᓗᒋᑦ ᖃᓗᕋᐅᑏᑦ ᐱᖓᓱᑦ ᐃᓂᐅᔪᑦ ᓴᐅᒥᖕᒧᑦ; ᐊᕕᒃᑎᓂᖅ; ÷10 ᓅᓪᓗᒋᑦ ᓈᓴᐅᑎᑦ 1 ᐃᓂᒧᑦ ᑕᓕᖅᐱᖕᒧᑦ; ÷100 ᓅᓪᓗᒋᑦ ᓈᓴᐅᑎᑦ 2 ᐃᓂᒧᑦ ᑕᓕᖅᐱᖕᒧᑦ; ÷1000 ᓅᓪᓗᒋᑦ ᓈᓴᐅᑎᑦ ᐱᖓᓱᑦ ᐃᓂᐅᔪᑦ ᑕᓕᖅᐱᖕᒧᑦ; ",
+                "to": "iu"
+            },
+            {
+                "text": "nunaup akinga; tausanginniittunik; hannalait; tupiit; igluit; qulit; hannalait; 1000-nginniittunik; amisuruqtittiniq; x10 nuullugit naasautiit 1 saumingmut; x100 nuullugit naasautiit marruuk saumingmut; x1000 nuullugit naasautiit pingasut saumingaanganut; aviktuiniq; ÷10 nuullugit naasautiit 1 taliqpingmut; ÷100 nuullugit naasautiik marruuk taliqpingmut; ÷1000 nuullugit naasautiit pingasut taliqpingmut; ",
+                "to": "iu-Latn"
+            },
+            {
+                "text": "場所の値;数千人。数百人。数十;単位;10分の1;100分の1。千分の1。乗算;x10 数字を 1 桁左に移動します。x100 数字を 2 桁左に移動します。x1000 数字を左に 3 桁移動します。分割;÷10 数字を1桁右に移動します。÷100 数字を 2 桁右に移動します。÷1000 数字を右に3桁移動します。",
+                "to": "ja"
+            },
+            {
+                "text": "ადგილის ღირებულება; ათასობით; ასობით; ათობით; ერთეულები; მეათედი; მეასედი; მეათედი; გამრავლება; x10 გადაიტანეთ ციფრები 1 ადგილი მარცხნივ; x100 გადაიტანეთ ციფრები 2 ადგილი მარცხნივ; x1000 გადაიტანეთ ციფრები 3 ადგილი მარცხნივ; გაყოფა; ÷10 გადაიტანეთ ციფრები 1 ადგილი მარჯვნივ; ÷100 გადაიტანეთ ციფრები 2 ადგილი მარჯვნივ; ÷1000 გადაიტანეთ ციფრები 3 ადგილი მარჯვნივ; ",
+                "to": "ka"
+            },
+            {
+                "text": "Орын мәні; мың; жүздеген; Ондаған; Бірлік; оныншы; Жүздеген; мыңдаған; көбейту; x10 сандарды 1 орынды солға жылжыту; x100 сандарды 2 орынды солға жылжыту; x1000 Сандарды 3 орынды солға жылжыту; бөліну; ÷10 сандарды оңға қарай 1 орынға жылжыту; ÷100 сандарды оңға қарай 2 орынға жылжыту; ÷1000 Сандарды оңға қарай 3 орынға жылжыту; ",
+                "to": "kk"
+            },
+            {
+                "text": "ដាក់ តម្លៃ; រាប់ពាន់; រាប់រយនាក់; ដប់; ឯកតា; ទីដប់; រយះ; កុដិ; ការ បណ្តុះ បណ្តាល ; x10 Move the digits 1 កន្លែងទៅខាងឆ្វេង; x100 រំកិលលេខ 2 កន្លែងទៅខាងឆ្វេង; x1000 រំកិលលេខ 3 កន្លែងទៅខាងឆ្វេង; ការបែងចែក; ÷10 រំកិលលេខ 1 កន្លែងទៅខាងស្តាំ; ÷100 រំកិលលេខ 2 កន្លែងទៅខាងស្តាំ; ÷1000 រំកិលលេខ 3 កន្លែងទៅខាងស្តាំ; ",
+                "to": "km"
+            },
+            {
+                "text": "Nirxê cih; Bi hezaran; Bi sedan; Bi dehan; Yekîne; Dehem; Sedsal; Bi hezaran; Pirjimar x10 hejmaran 1 cih bi milê çepê ve biguhêze; x100 hejmaran 2 cihên çepê biguherîne; x1000 hejmaran 3 cihên çepê biguhezîne; Dabeşdike; ÷10 Hejmaran 1 cih î rastê biguhezîne; ÷100 Hejmaran 2 cihên rastê biguhezîne; ÷1000 hejmaran 3 cihên rastê biguhezîne; ",
+                "to": "kmr"
+            },{
+                "text": "장소 값; 수천; 수백; 수만; 단위; 열 번째; 백; 수천 명; 곱하기; x10 숫자 1을 왼쪽으로 이동합니다. x100 숫자를 왼쪽으로 2 자리 이동합니다. x1000 숫자를 왼쪽으로 3 자리 이동합니다. 분할; ÷10 숫자 1 장소를 오른쪽으로 이동하십시오. ÷100 숫자를 오른쪽으로 2 자리 이동합니다. ÷1000 숫자 3 장소를 오른쪽으로 이동하십시오. ",
+                "to": "ko"
+            },
+            {
+                "text": "بەهای شوێن؛ هەزارەها؛ سەدەها؛ دەیان؛ یەکەکان؛ دەیەم؛ سەدەها؛ هەزارەها؛ فرەکردن؛ x10 ژمارەیەکان بجوڵێنە 1 شوێن بۆ لای چەپ؛ x100 گواستنەوەی ژمارەی 2 شوێن بۆ لای چەپ؛ x1000 ژمارەی 3 شوێن بجوڵێنە بۆ لای چەپ؛ دابەشکردن؛ ÷10 گواستنەوەی ژمارەی 1 شوێن بۆ لای ڕاست؛ ÷100 گواستنەوەی ژمارەی 2 شوێن بۆ لای ڕاست؛ ÷1000 ژمارەی 3 شوێن بجوڵێنە بۆ لای ڕاست؛ ",
+                "to": "ku"
+            },
+            {
+                "text": "Жайгаштыруу наркы; Миңдеген; Жүздөгөн; Он; Бирдиктер; Онунчу; Жүздөгөн; Миңдеген; көбөйтүү; x10 Сандарды солго 1 орунга жылдыруу; x100 сандарды солго 2 орунга жылдыруу; x1000 сандарды солго 3 орунга жылдыруу; бөлүштүрүү; ÷10 сандарды оңго жылдыруу; ÷100 Сандарды 2 орун оңго жылдыруу; ÷1000 сандарды 3 орун оңго жылдыруу; ",
+                "to": "ky"
+            },
+            {
+                "text": "Place Value; ພັນ; ຮ້ອຍ; ສິບ; ຫນ່ວຍງານ; ທີສິບ; ຮ້ອຍ; ພັນ; ການບລິການ; x10 ຍ້າຍຕົວເລກ 1 ບ່ອນໄປທາງຊ້າຍ; x100 ຍ້າຍຕົວເລກ 2 ບ່ອນໄປທາງຊ້າຍ; x1000 ຍ້າຍຕົວເລກ 3 ບ່ອນໄປທາງຊ້າຍ; ການແບ່ງແຍກ; ÷10 ຍ້າຍຕົວເລກ 1 ບ່ອນໄປທາງຂວາ; ÷100 ຍ້າຍຕົວເລກ 2 ບ່ອນໄປທາງຂວາ; ÷1000 ຍ້າຍຕົວເລກ 3 ບ່ອນໄປທາງຂວາ; ",
+                "to": "lo"
+            },
+            {
+                "text": "Vietos reikšmė; tūkstančiai; Šimtai; Dešimtys; Vienetai; Dešimtosios; Šimtosios; Tūkstantosios; Dauginimas; x10 Perkelkite skaitmenis 1 į kairę; x100 Perkelkite skaitmenis 2 vietomis į kairę; x1000 Perkelkite skaitmenis 3 vietomis į kairę; Dalijimasis; ÷10 Perkelkite skaitmenis 1 vieta į dešinę; ÷100 Perkelkite skaitmenis 2 vietos į dešinę; ÷1000 Perkelkite skaitmenis 3 vietos į dešinę; ",
+                "to": "lt"
+            },
+            {
+                "text": "Vietas vērtība; Tūkstoši; Simtiem; Desmiti; Vienības; Desmitdaļas; Simtdaļas; Tūkstošdaļas; Reizināšana; x10 Pārvietojiet ciparus 1 vieta pa kreisi; x100 Pārvietojiet ciparus 2 vietas pa kreisi; x1000 Pārvietojiet ciparus 3 vietas pa kreisi; Dalīšana; ÷10 Pārvietojiet ciparus 1 vieta pa labi; ÷100 Pārvietojiet ciparus 2 vietas pa labi; ÷1000 Pārvietojiet ciparus 3 vietas pa labi; ",
+                "to": "lv"
+            },
+            {
+                "text": "置信; 数千人; 数百; 数十; 单位; 什一; 百分之一; 千分之一; 乘法; x10 将数 1 位向左移。 x100 左移 2 位。 x1000 左移 3 位。 除之; ÷10 右移1位向。 ÷100 右移2位。 ÷1000 右移3位。 ",
+                "to": "lzh"
+            },
+            {
+                "text": "Asio sanda; An'arivony; an-jatony; Folo; Vondrona; Fahafolo; Zato; An'arivony; Mitombo; x10 Afindrao eo ankavia ireo isa 1; x100 Afindrao miankavia ireo isa 2; x1000 Afindrao eo ankavia ireo isa 3; Fizarazara; ÷10 Afindrao eo ankavanana ireo isa 1; ÷100 Afindrao miankavanana ireo isa 2; ÷1000 Afindrao miankavanana ireo isa 3; ",
+                "to": "mg"
+            },
+            {
+                "text": "Uara Whakanoho; E hia mano; Rau; Tekau; Ngā Wae; Tenths; Rau Thousandths; Whakarea; x10 Nuku i te wāhi mati 1 ki te taha mauī; x100 Nukua ngā mati e 2 ngā wāhi ki te taha mauī; x1000 Nekehia ngā mati e 3 ngā wāhi ki te taha mauī; Kei te whai wāhi; ÷10 Nekehia ngā mati 1 ki te taha matau; ÷100 Nekehia ngā mati e 2 ngā wāhi ki te taha matau; ÷1000 Nekehia ngā mati e 3 ngā wāhi ki te taha matau; ",
+                "to": "mi"
+            },{
+                "text": "Leku-balioa; Miles; Ehunka; Dozenaka; Unitateak; Hamargarrenak; Ehunenak; Milarenak; Biderkatu; 10) Mugi digituak ezkerraldean; x100 Mugi digituak 2 leku ezkerraldean; x1000 Digituak 3 leku ezkerraldean mugitzea; Zatitu; ÷10 Leku 1a eskuinerantz mugitzen ditu; ÷100 Digituak 2 leku mugitzen ditu eskuinerantz; ÷1000 Digituak 3 leku mugitzen ditu eskuinerantz; ",
+                "to": "eu"
+            },
+            {
+                "text": "ارزش مکان؛ هزاران نفر؛ صدها؛ ده ها؛ واحدها؛ دهم؛ صدم؛ هزارها؛ ضرب؛ x10 حرکت ارقام 1 محل به سمت چپ; x100 حرکت ارقام 2 مکان به سمت چپ; x1000 حرکت ارقام 3 مکان به سمت چپ; تقسیم؛ ÷10 حرکت ارقام 1 محل به سمت راست; ÷100 حرکت ارقام 2 مکان به سمت راست; ÷1000 حرکت ارقام 3 مکان به سمت راست; ",
+                "to": "fa"
+            },
+            {
+                "text": "Paikan arvo; Tuhansia; Satoja; Kympit; Yksiköt; Kymmenesosat; Sadasosat; Tuhannesosat; Kertominen; x10 Siirrä numerot 1 paikkaa vasemmalle; x100 Siirrä numeroita 2 paikkaa vasemmalle; x1000 Siirrä numerot 3 paikkaa vasemmalle; Jakaminen; ÷10 Siirrä numerot 1 paikkaa oikealle; ÷100 Siirrä numerot 2 paikkaa oikealle; ÷1000 Siirrä numerot 3 paikkaa oikealle; ",
+                "to": "fi"
+            },
+            {
+                "text": "Halaga ng Lugar; Libu-libo; Daan-daang tao; Tens; Mga Yunit; Ikasampung bahagi; Daan-daang tao; Libu-libo; Dumarami; x10 Ilipat ang mga digit 1 lugar sa kaliwa; x100 Ilipat ang mga digit 2 lugar sa kaliwa; x1000 Ilipat ang mga digit 3 lugar sa kaliwa; Paghati; ÷10 Ilipat ang mga digit 1 lugar sa kanan; ÷100 Ilipat ang mga digit 2 lugar sa kanan; ÷1000 Ilipat ang mga digit 3 lugar sa kanan; ",
+                "to": "fil"
+            },
+            {
+                "text": "Yavunilewa ni Vanua; E udolu; Drau; Vakatini; Tabanilotu; iKatini; Drau vakadrau; Udolu vakaudolu; Tubu me Lewe levu; x10 Tosoya na naba 1 ki na imawi; x100 Tosoya na naba e 2 ki na imawi; x1000 Tosoya na naba e 3 na kena ena imawi; Veitawasei; ÷10 Tosoya na naba 1 ki na imatau; ÷100 Tosoya na naba e 2 ena imatau; ÷1000 Tosoya na naba e 3 ena imatau; ",
+                "to": "fj"
+            },
+            {
+                "text": "Place Value; Fólk í túsundatali; Fleiri hundrað; Tens; Units; Tíggjundas; Hundrað fólk; Tú/tit hevur/hava; Plast; x10 Move digitar 1 place til vinstru; x100 Move digits 2 støð til vinstru; x1000 Move digits 3 støð til vinstru; Dividing; ÷10 Move digitini 1 place til høgru; ÷100 Move digitini 2 støð til høgru; ÷1000 Move digitini 3 støð til høgru; ",
+                "to": "fo"
+            },
+            {
+                "text": "Valeur de l’emplacement; Des milliers; Des centaines; Dizaines; Unités; Dixièmes; Centièmes; Millièmes; Multiplication; x10 Déplacez les chiffres 1 place vers la gauche; x100 Déplacez les chiffres de 2 endroits vers la gauche; x1000 Déplacez les chiffres de 3 endroits vers la gauche; Diviser; ÷10 Déplacez les chiffres 1 place vers la droite ; ÷100 Déplacez les chiffres de 2 endroits vers la droite ; ÷1000 Déplacez les chiffres de 3 endroits vers la droite; ",
+                "to": "fr"
+            },
+            {
+                "text": "Valeur de l’endroit; Des milliers; Des centaines; Dizaines; Unités; Dixièmes; Centièmes; Millièmes; Multiplier; x10 Déplacez les chiffres 1 place vers la gauche; x100 Déplacez les chiffres 2 endroits vers la gauche; x1000 Déplacez les chiffres à 3 endroits vers la gauche; La division; ÷10 Déplacer les chiffres 1 place vers la droite; ÷100 Déplacez les chiffres à 2 endroits vers la droite; ÷1000 Déplacez les chiffres à 3 endroits vers la droite; ",
+                "to": "fr-CA"
+            },
+            {
+                "text": "Ionadluach; Na mílte; Na céadta; Na deicheanna; Aonaid; Deichiú; Céaduithe; Míleú; Ag iolrú; x10 Bog na digití 1 áit ar chlé; x100 Bog na digití 2 áit ar chlé; x1000 Bog na digití 3 áit ar chlé; Roinnt; ÷10 Bog na digití 1 áit ar dheis; ÷100 Bog na digití 2 áit ar dheis; ÷1000 Bog na digití 3 áit ar dheis; ",
+                "to": "ga"
+            },{
+                "text": "Te faufaa o te vahi ; E rave rahi tauatini ; e rave rahi hanere ; Ahuru ; te mau amuiraa ; Te ahuru ; tauihia te mau vahiraa no te faatîtîraa; tausani noa'tu i te ava'e ; Te faarahiraa ; x10 A faanuu i te mau apoo 1 i te pae aui ; x100 A faanuu i te mau apoo e 2 vahi i te pae aui ; x1000 A faanuu i te mau api 3 i te pae aui ; Te mau himene na te pŭpŭ himene no te Fare Haapiiraa ÷10 A faanuu i te mau apoo 1 i te pae atau ; ÷100 a faanuu i te mau vahi e 2 vahi i te pae atau ; ÷1000 e haere i te pae atau e 3 vahi i te pae atau; ",
+                "to": "ty"
+            },
+            {
+                "text": "ئورۇن قىممىتى؛ مىڭلىغان؛ يۈزلەرچە؛ ئونلۇق ؛ ئورۇنلار؛ ئونىنچى؛ يۈزلەرچە؛ مىڭىنچى؛ كۆپتۈرۈش؛ x10 خانىلىق سانلارنى 1 ئورۇننى سولغا يۆتكەش؛ x100 خانىلىق سانلارنى 2 ئورۇننى سولغا يۆتكەش؛ x1000 خانىلىق سانلارنى 3 ئورۇننى سولغا يۆتكەش؛ پارچىلىنىش؛ ÷10 سان 1 ئورۇننى ئوڭغا يۆتكەش؛ ÷100 ساننى 2 ئورۇنغا ئوڭغا يۆتكەش؛ ÷1000 ساننى 3 جايغا ئوڭغا يۆتكەش؛ ",
+                "to": "ug"
+            },
+            {
+                "text": "Значення місця; тисячі; Сотні; Десятки; Одиниці; Десяті; соті; тисячні; множення; x10 Перемістіть цифри на 1 місце ліворуч; x100 Перемістіть цифри на 2 місця ліворуч; x1000 Перемістіть цифри на 3 місця ліворуч; Ділення; ÷10 Перемістіть цифри на 1 місце вправо; ÷100 Перемістіть цифри на 2 місця вправо; ÷1000 Перемістіть цифри на 3 місця вправо; ",
+                "to": "uk"
+            },
+            {
+                "text": "قدر جگہ؛ ہزاروں؛ سینکڑوں؛ دسیوں؛ اکائیاں؛ دسواں حصہ؛ سوویں؛ ہزارویں حصے؛ ضرب دینا؛ ایکس 10 ہندسوں کو بائیں طرف 1 جگہ منتقل کریں؛ ایکس 100 ہندسوں کو بائیں طرف 2 مقامات منتقل کریں؛ 1000 عدد بائیں طرف 3 مقامات منتقل کریں؛ تقسیم کرنا؛ ÷10 ہندسوں کو دائیں طرف 1 جگہ منتقل کریں؛ ÷100 ہندسوں کو دائیں طرف 2 مقامات منتقل کریں؛ ÷1000 ہندسوں کو دائیں طرف 3 مقامات پر منتقل کریں؛ ",
+                "to": "ur"
+            },
+            {
+                "text": "Qiymatni qo'yish; Minglab; Yuzlab; O'nlik; Birjalar; O'ninchi; Yuzinchi; Mingta; ko'paytirmoqda; x10 Raqamlarni chap tomonga 1 o'ringa ko'chirish; x100 Raqamlarni chapga 2 joyni ko'chirish; x1000 Raqamlarni chap tomonga 3 o'ringa ko'chirish; bo'lish; ÷10 Raqamlarni 1 o'ngga ko'chirish; ÷100 Raqamlarni 2 o'ngga ko'chirish; ÷1000 Raqamlarni 3 o'ngga ko'chirish; ",
+                "to": "uz"
+            },
+            {
+                "text": "Giá trị địa điểm; Hàng ngàn người; Hàng trăm; Hàng chục; Các đơn vị; Mười; Trăm; Phần nghìn; Nhân lên; x10 Di chuyển các chữ số 1 vị trí sang trái; x100 Di chuyển các chữ số 2 vị trí sang trái; x1000 Di chuyển các chữ số 3 vị trí sang trái; Phân chia; ÷10 Di chuyển các chữ số 1 vị trí sang phải; ÷100 Di chuyển các chữ số 2 vị trí sang phải; ÷1000 Di chuyển các chữ số 3 chỗ sang phải; ",
+                "to": "vi"
+            },
+            {
+                "text": "Ku ti' kúuchil; Miles; Cientos; Decenas; Kúuchilo'ob; Décimas; Centésimas; Milésimas; Multiplicar; x10 Mueva le dígitos 1 kúuchil ti' le izquierda; x100 Mueva le dígitos 2 tu'ux yaan le izquierda; x1000 péeksik le dígitos 3 tu'ux yaan le izquierda; Ja'atsal; ÷10 Mueva le dígitos 1 kúuchil ti' le derecha; ÷100 Mueva le dígitos 2 tu'ux ti' le derecha; ÷1000 Mueva le dígitos 3 tu'ux ti' le derecha; ",
+                "to": "yua"
+            },
+            {
+                "text": "放置值; 數千人; 數百個; 幾十個; 單位; 十分之一; 百分之一; 千分之一; 乘法; x10把數字1位向左移動; x100將數字向左移動2位; x1000將數字向左移動3位; 除法; ÷10將數字1位向右移動; ÷100將數字向右移動2位; ÷1000將數字向右移動3位; ",
+                "to": "yue"
+            },
+            {
+                "text": "放置值;数千人;数百个;几十个;单位;十分之一;百分之一;千分之一;乘法;x10 将数字 1 位向左移动;x100 将数字向左移动 2 位;x1000 将数字向左移动 3 位;除法;÷10 将数字1位向右移动;÷100 将数字向右移动2位;÷1000 将数字向右移动3位;",
+                "to": "zh-Hans"
+            },{
+                "text": "സ്ഥാനം മൂല്യം; ആയിരങ്ങള് ; നൂറുകണക്കിനാളുകള് ; പത്ത്; യൂണിറ്റുകൾ; പത്താമത്; നൂറിലൊരംശം; ആയിരത്തില് ഒന്ന്; പെരുകുന്നു; x10 അക്കങ്ങൾ ഇടത്തോട്ട് 1 സ്ഥലം നീക്കുക; x100 അക്കങ്ങൾ ഇടത്തോട്ട് 2 സ്ഥലങ്ങൾ നീക്കുക; x1000 അക്കങ്ങൾ ഇടത്തോട്ട് 3 സ്ഥലങ്ങൾ നീക്കുക; വിഭജനം; ÷10 അക്കങ്ങൾ 1 സ്ഥലം വലത്തോട്ട് നീക്കുക; ÷100 അക്കങ്ങൾ 2 സ്ഥലങ്ങൾ വലത്തോട്ട് നീക്കുക; ÷1000 അക്കങ്ങൾ 3 സ്ഥലങ്ങൾ വലത്തോട്ട് നീക്കുക; ",
+                "to": "ml"
+            },
+            {
+                "text": "Үнэ цэнийг байрлуул; Мянгат; Зуун зуун; Аравт; Аж ахуйн нэгж; Аравт; Зуунт; Мянгат; Үржүүлэх; x10 Тоонуудыг зүүн тийш 1 байрлалаар зөөх; x100 тоонуудыг зүүн тийш 2 байрлалаар зөөх; x1000 тоонуудыг зүүн тийш 3 байрлалаар зөөх; Хуваах; ÷10 тоотод баруун тийш 1 газар шилжин; ÷100 тоот 2 газрыг баруун тийш нь зөөх; ÷1000-ын тоонуудыг баруун тийш нь 3 байрлалаар зөөх; ",
+                "to": "mn-Cyrl"
+            },
+            {
+                "text": "ᠬᠡᠮᠵᠢᠭᠳᠡᠯ ᠢ ᠲᠠᠯᠪᠢᠬᠤ ᠬᠡᠳᠦᠨ ᠮᠢᠩᠭ᠋ᠠᠨ ᠬᠥᠮᠥᠨ ᠬᠡᠳᠦᠨ ᠵᠠᠭᠤᠨ ᠬᠡᠳᠦᠨ ᠠᠷᠪᠠᠨ ᠨᠢᠭᠡᠴᠡ; ᠠᠷᠪᠠᠨ ᠤ ᠨᠢᠭᠡ; ᠵᠠᠭᠤᠨ ᠤ ᠨᠢᠭᠡ; ᠮᠢᠩᠭ᠋ᠠᠨ ᠤ ᠨᠢᠭᠡ; ᠬᠠᠤᠯᠢ ᠳᠤ ᠰᠠᠭᠤᠬᠤ; x10 ᠲᠣᠭ᠎ᠠ ᠶᠢ ᠵᠡᠭᠦᠨᠰᠢ ᠰᠢᠯᠵᠢᠭᠦᠯᠦᠨ᠎ᠡ ᠃ x100 ᠲᠣᠭ᠎ᠠ ᠶᠢ ᠵᠡᠭᠦᠨᠰᠢ ᠰᠢᠯᠵᠢᠭᠦᠯᠵᠡᠢ ᠃ x1000 ᠲᠣᠭ᠎ᠠ ᠶᠢ ᠵᠡᠭᠦᠨᠰᠢ ᠰᠢᠯᠵᠢᠭᠦᠯᠵᠡᠶ ᠃ ᠬᠠᠤᠯᠢ ᠶᠢ ᠭᠠᠷᠭᠠᠬᠤ; ÷10 ᠲᠣᠭ᠎ᠠ ᠪᠠᠷᠢᠮᠲᠠ ᠶᠢᠨ ᠨᠢᠭᠡ ᠶᠢ ᠪᠠᠷᠠᠭᠤᠨᠰᠢ ᠰᠢᠯᠵᠢᠭᠦᠯᠦᠨ᠎ᠡ ᠃ ÷ アーᠣ ᠲᠣᠭ᠎ᠠ ᠶᠢ ᠪᠠᠷᠠᠭᠤᠨᠰᠢ 2 ᠣᠷᠣᠨ ᠪᠠᠶᠢᠷᠢ ᠰᠢᠯᠵᠢᠭᠦᠯᠦᠨ᠎ᠡ ᠃ ÷ アーᠣᠣ ᠲᠣᠭ᠎ᠠ ᠶᠢ ᠪᠠᠷᠠᠭᠤᠨᠰᠢ ウ ᠣᠷᠣᠨ ᠪᠠᠶᠢᠷᠢ ᠰᠢᠯᠵᠢᠭᠦᠯᠵᠡᠶ ᠃ ",
+                "to": "mn-Mong"
+            },
+            {
+                "text": "स्थान मूल्य; हजारो; शेकडो; टेन्स; युनिट्स; दशांश; शंभराव्या; हजारावां; गुणाकार; x10 अंक 1 स्थान डावीकडे हलवा; x100 अंक 2 स्थाने डावीकडे हलवा; x1000 अंक 3 स्थाने डावीकडे हलवा; विभाजन; ÷१० अंक १ स्थान उजवीकडे हलवा; ÷१०० अंक उजवीकडे २ ठिकाणी हलवा; ÷1000 अंक उजवीकडे 3 ठिकाणी हलवा; ",
+                "to": "mr"
+            },
+            {
+                "text": "Nilai Tempat; Beribu-ribu; Beratus-ratus; Puluhan; Unit; Kesepuluh; Seratus; Seribu; Mendarab; x10 Gerakkan tempat digit 1 ke kiri; x100 Gerakkan digit 2 tempat ke kiri; x1000 Gerakkan digit 3 tempat ke kiri; Membahagikan; ÷10 Gerakkan tempat digit 1 ke kanan; ÷100 Gerakkan digit 2 tempat ke kanan; ÷1000 Gerakkan digit 3 tempat ke kanan; ",
+                "to": "ms"
+            },
+            {
+                "text": "Il-valur tal-post; Eluf; Mijiet; Għexieren; Unitajiet; L-għaxra; Il-mija; Minn elf; Il-multiplikazzjoni; x10 Mexxi ċ-ċifri post wieħed lejn ix-xellug; x100 Mexxi ċ-ċifri 2 postijiet lejn ix-xellug; x1000 Mexxi ċ-ċifri 3 postijiet lejn ix-xellug; Id-diviżjoni; ÷10 Mexxi ċ-ċifri 1 post lejn il-lemin; ÷100 Mexxi ċ-ċifri 2 postijiet lejn il-lemin; ÷1000 Mexxi ċ-ċifri 3 postijiet lejn il-lemin; ",
+                "to": "mt"
+            },
+            {
+                "text": "Qhov Chaw Nyob; Txhiab; 175,00 Kaum tawm; Chav nyob; Cov Tshev Mis; Puas 175,000 puas; Txhiab; multiplying; x10 Txav tus digits 1 qhov chaw rau sab laug; x100 Txav tus digits 2 qhov chaw rau sab laug; x1000 Txav tus digits 3 qhov chaw rau sab laug; Sib Tw; ÷10 Txav mus rau qhov chaw 1 qhov chaw nyob; ÷100 Txav tus digits 2 qhov chaw rau txoj cai; ÷1000 Txav tus digits 3 qhov chaw rau txoj cai; ",
+                "to": "mww"
+            },
+            {
+                "text": "နေရာချတန်ဖိုး၊ ထောင်နှင့်ချီ၍ ရာနှင့်ချီရှိသည်။ တင်းတင်းများ၊ ယူနစ်များ၊ ဒသမ ဆယ်ပါး၊ ၁၀ ။ ထောင်ချီ၊ များစွာများပြားလာသည်။ x10 ကိန်းဂျစ်ကို ဘယ်ဘက်မှာ ၁ နေရာ ရွှေ့ပါ။ x1000 ကိန်းဂျစ် ၂ နေရာကို ဘယ်ဘက်သို့ ရွှေ့ပါ။ x1000 ကိန်းဂျစ်ကို ဘယ်ဘက်မှာ ၃ နေရာ ရွှေ့လိုက်ပါ။ ခွဲဝေခြင်း၊ ÷ ၁၀ ကိန်းဂျစ်ကို ညာဘက်သို့ ရွှေ့ပါ။ ÷ ၁၀၀ ကိန်းဂျစ်ကို ညာဘက်နေရာ ၂ နေရာ ရွှေ့လိုက်ပါ။ ÷ ၁၀၀၀ ကိန်းဂျစ်ကို ညာဘက်သို့ ၃ နေရာ ရွှေ့ပါ။ ",
+                "to": "my"
+            },
+            {
+                "text": "Plasser verdi; Tusener; Hundrevis; Tiere; Enheter; Tideler; Hundredel; Tusendeler; Multipliserer; x10 Flytt sifrene 1 plass til venstre. x100 Flytt tallene 2 plasser til venstre. x1000 Flytt tallene 3 plasser til venstre. Deling; ÷10 Flytt tallene 1 plass til høyre. ÷100 Flytt tallene 2 plasser til høyre. ÷1000 Flytt tallene 3 plasser til høyre. ",
+                "to": "nb"
+            },{
+                "text": "Waarde plaatsen; Duizenden; Honderden; Tientallen; Eenheden; Tienden; Honderdsten; Duizendsten; Vermenigvuldigen; x10 Verplaats de cijfers 1 plaats naar links; x100 Verplaats de cijfers 2 plaatsen naar links; x1000 Verplaats de cijfers 3 plaatsen naar links; Verdelen; ÷10 Verplaats de cijfers 1 plaats naar rechts; ÷100 Verplaats de cijfers 2 plaatsen naar rechts; ÷1000 Verplaats de cijfers 3 plaatsen naar rechts; ",
+                "to": "nl"
+            },
+            {
+                "text": "ମୂଲ୍ୟ ରଖନ୍ତୁ; ହଜାର ହଜାର; ଶହ ଶହ; ଦଶ; ୟୁନିଟ୍; ଦଶମ; ଶହେ; ହଜାରତମ; ବହୁଗୁଣିତ; ଏକ୍ସ10 ଅଙ୍କଗୁଡିକ 1 ସ୍ଥାନକୁ ବାମକୁ ଘୁଞ୍ଚାନ୍ତୁ; ଏକ୍ସ100 ଅଙ୍କଗୁଡିକ 2 ସ୍ଥାନ ବାମକୁ ଘୁଞ୍ଚାନ୍ତୁ; ଏକ୍ସ1000 ଅଙ୍କଗୁଡିକ 3 ସ୍ଥାନ ବାମକୁ ଘୁଞ୍ଚାନ୍ତୁ; ବିଭାଜନ; ÷10 ଅଙ୍କଗୁଡିକ 1 ସ୍ଥାନକୁ ଡାହାଣକୁ ଘୁଞ୍ଚାନ୍ତୁ; ÷100 ଅଙ୍କଗୁଡିକ 2 ଟି ସ୍ଥାନକୁ ଡାହାଣକୁ ଘୁଞ୍ଚାନ୍ତୁ; ÷1000 ଅଙ୍କଗୁଡିକ 3 ଟି ସ୍ଥାନକୁ ଡାହାଣକୁ ଘୁଞ୍ଚାନ୍ତୁ; ",
+                "to": "or"
+            },
+            {
+                "text": "Hmädi lugar; Miles; Cientos; Decenas; Unidades; Décimas; Centésimas; Milésimas; Multiplicar; x 10 Mueva ya dígitos 1 lugar da izquierda; x 100 Mueva ya dígitos 2 ya xeni jar izquierda; x 1000 Mover ya dígitos 3 xeni da izquierda; Gi; ÷10 mueva ya dígitos 1 lugar ntsuni derecha; ÷100 mueva ya dígitos 2 xeni ntsuni derecha; ÷1000 mueva ya dígitos 3 xeni ntsuni derecha; ",
+                "to": "otq"
+            },
+            {
+                "text": "ਥਾਂ ਮੁੱਲ; ਹਜ਼ਾਰਾਂ; ਸੈਂਕੜੇ; ਦਸਾਂ; । ਇਕਾਈਆਂ; ਦਸਵੰਧ; ਸੌਵੇਂ ਹਿੱਸੇ; ਹਜ਼ਾਰਵਾਂ ਹਿੱਸਾ; ਗੁਣਾ ਕਰਨਾ; x10 ਅੰਕਾਂ ਨੂੰ 1 ਸਥਾਨ ਖੱਬੇ ਪਾਸੇ ਵੱਲ ਖਿਸਕਾਓ; x100 ਅੰਕਾਂ ਨੂੰ 2 ਸਥਾਨਾਂ ਨੂੰ ਖੱਬੇ ਪਾਸੇ ਵੱਲ ਖਿਸਕਾਓ; x1000 ਅੰਕਾਂ ਨੂੰ 3 ਸਥਾਨਾਂ ਨੂੰ ਖੱਬੇ ਪਾਸੇ ਵੱਲ ਮੂਵ ਕਰੋ; ਵੰਡਣਾ; ÷10 ਅੰਕਾਂ ਨੂੰ 1 ਸਥਾਨ 'ਤੇ ਸੱਜੇ ਪਾਸੇ ਲੈ ਜਾਓ; ÷100 ਅੰਕਾਂ ਨੂੰ ਸੱਜੇ ਪਾਸੇ ਵੱਲ 2 ਸਥਾਨਾਂ 'ਤੇ ਲਿਜਾਓ; ÷1000 ਅੰਕਾਂ ਨੂੰ 3 ਸਥਾਨਾਂ ਨੂੰ ਸੱਜੇ ਪਾਸੇ ਵੱਲ ਖਿਸਕਾਓ; ",
+                "to": "pa"
+            },
+            {
+                "text": "Wartość miejsca; Tysiące; Setki; Dziesiątki; Jednostki; Dziesiąte części; Setne; Tysięczne części; Mnożenie; x10 Przesuń cyfry o 1 miejsce w lewo; x100 Przesuń cyfry o 2 miejsca w lewo; x1000 Przesuń cyfry o 3 miejsca w lewo; Dzielenie; ÷10 Przesuń cyfry 1 w prawo; ÷100 Przesuń cyfry o 2 miejsca w prawo; ÷1000 Przesuń cyfry o 3 miejsca w prawo; ",
+                "to": "pl"
+            },
+            {
+                "text": "ارزش مکان; هزاران نفر؛ صدها نفر; ده ها; واحدها؛ دهم؛ صدم؛ هزاران نفر؛ ضرب؛ x10 حرکت رقم 1 محل به سمت چپ; x100 حرکت رقم 2 مکان به سمت چپ; x1000 حرکت رقم 3 مکان به سمت چپ; تقسیم; ÷10 حرکت رقم 1 محل به سمت راست; ÷100 حرکت رقم 2 مکان به سمت راست; ÷ 1000 حرکت رقم 3 مکان به سمت راست; ",
+                "to": "prs"
+            },
+            {
+                "text": "د ځای ارزښت ؛ زرګونه ؛ سلګونه ؛ لسان ؛ واحدونه ؛ Tenths ; سلهاوو ؛ هزارونه ؛ ضرب ؛ x10 د ډیجیټ 1 ځای کیڼ خوا ته انتقال کړئ؛ x100 دا ډیجیټ 2 ځایونه کیڼ خوا ته انتقال کړئ؛ x1000 دا ډیجیټ 3 ځایونه کیڼ خوا ته انتقال کړئ؛ ویشل ؛ ÷ 10 د یو ځای څخه ښی خوا ته انتقال کړئ؛ ÷ 100 دا دوه ځایونه ښی خوا ته انتقال کړه؛ ÷ 1000 0 د 3 ځایونو د ښی خوا ته وخوځیدو؛ ",
+                "to": "ps"
+            },
+            {
+                "text": "Valor de lugar; Milhares; Centenas; Dez; Unidades; Décimos; Centésimos; Milésimos; Multiplicando; x10 Mova os dígitos 1 lugar para a esquerda; x100 Mova os dígitos 2 lugares para a esquerda; x1000 Mova os dígitos 3 lugares para a esquerda; Dividindo; ÷10 Mova os dígitos 1 lugar para a direita; ÷100 Mova os dígitos 2 lugares para a direita; ÷1000 Mova os dígitos 3 lugares para a direita; ",
+                "to": "pt"
+            },
+            {
+                "text": "Valor do Lugar; Milhares; Centenas; Dez; Unidades; Décimos; Centésimos; Milésimos; Multiplicação; x10 Mova os dígitos 1 lugar para a esquerda; x100 Mova os dígitos 2 lugares para a esquerda; x1000 Mova os dígitos 3 lugares para a esquerda; Divisão; ÷10 Mova os dígitos 1 lugar para a direita; ÷100 Mova os dígitos 2 lugares para a direita; ÷1000 Mova os dígitos 3 lugares para a direita; ",
+                "to": "pt-PT"
+            },{
+                "text": "இட மதிப்பு; ஆயிரக்கணக்கான; நூற்றுக்கணக்கான; பத்து; அலகுகள்; பத்தில் ஒரு பங்கு; நூறில் ஒரு பங்கு; ஆயிரத்தில் ஒரு பங்கு; பெருக்குதல்; x10 இலக்கங்களை 1 இடத்தை இடதுபுறம் நகர்த்தவும்; x100 இலக்கங்களை 2 இடங்களில் இடதுபுறம் நகர்த்தவும்; x1000 இலக்கங்களை 3 இடங்களை இடதுபுறம் நகர்த்தவும்; பிரித்தல்; ÷10 இலக்கங்களை 1 இடத்தை வலப்புறம் நகர்த்தவும்; ÷100 இலக்கங்களை 2 இடங்களில் வலதுபுறமாக நகர்த்தவும்; ÷1000 இலக்கங்களை 3 இடங்களில் வலதுபுறம் நகர்த்தவும்; ",
+                "to": "ta"
+            },
+            {
+                "text": "స్థల విలువ; వేలాది; వందలు; పదుల సంఖ్యలో; యూనిట్లు; టెన్త్స్; నూరువ వంతు; వేయి వంతులు; గుణించడం; x10 అంకెలు 1 స్థానాన్ని ఎడమకు తరలించండి; x100 అంకెలను 2 స్థానాలను ఎడమకు తరలించండి; x1000 అంకెలను 3 స్థానాలకు ఎడమకు తరలించండి; విభజించడం; ÷10 అంకెలను 1 స్థానంలో కుడివైపుకు తరలించండి; ÷100 అంకెలను 2 స్థానాలకు కుడివైపుకు తరలించండి; ÷1000 అంకెలను 3 స్థానాలకు కుడివైపుకు తరలించండి; ",
+                "to": "te"
+            },
+            {
+                "text": "ค่าสถานที่; พัน; ร้อย; สิบ; หน่วย; สิบ; ร้อย; พัน; การคูณ; x10 ย้ายตัวเลข 1 ไปทางซ้าย x100 ย้ายตัวเลข 2 ตําแหน่งไปทางซ้าย x1000 ย้ายตัวเลข 3 ตําแหน่งไปทางซ้าย การแบ่ง; ÷10 ย้ายตัวเลข 1 ตําแหน่งไปทางขวา ÷100 ย้ายตัวเลข 2 ตําแหน่งไปทางขวา ÷1000 ย้ายตัวเลข 3 ตําแหน่งไปทางขวา ",
+                "to": "th"
+            },
+            {
+                "text": "ዋጋ ዘለዎ ቦታ፣ ኣሽሓት፣ ኣማእታት፣ ዓሰርተታት፣ ዩኒት፣ ዓስራይ፣ መበል ሚእቲ፣ ሽሕ፣ እናበዝሐ ይኸይድ፣ x10 ነቲ ኣሃዛት 1 ናብ ጸጋም ኣንቀሳቕሶ፣ x100 ነቲ ኣሃዛት 2 ናብ ጸጋም ኣንቀሳቕሶ፣ x1000 ነቲ 3 ቦታታት ናብ ጸጋም ኣንቀሳቕሶ፣ ምክፍፋል፣ ÷10 ነቲ ኣሃዛት 1 ናብ የማን ኣንቀሳቕስዎ፣ ÷100 ነቲ 2 ቦታታት ናብ የማን ኣንቀሳቕስዎ፣ ÷1000 ነቲ 3 ቦታታት ናብ የማን ኣንቀሳቕስዎ፣ ",
+                "to": "ti"
+            },
+            {
+                "text": "Ýer gymmaty; Müňlerçe; ýüzlerçe; onlyk; Unitar unitar; Onunjylar; Ýüzler; Müňýyllyklar; Köpeltmek; x10 Sanlary 1-nji ýer çepe süýşürmek; x100 Sanlary 2 ýer çepe süýşürmek; x1000 Sanlary 3 ýer çepe süýşürmek; Bölmek; ÷10 sanlary 1-nji ýer sag tarapa süýşürmek; ÷100 Sanlary 2 ýer sag tarapa süýşürmek; ÷1000 sanlary 3 ýer sag tarapa süýşürmek; ",
+                "to": "tk"
+            },
+            {
+                "text": "wej rurchu' qengtaHvIS. SaHlaw'pu'; tlhaw'DIyuS yIja'.\" ghopDu'lIj yI'el. ghu'vam ta'be'. tlhabchu' 'e' maq. SuH, jIHvaD chopjaj Hoch. bISuvnIS. DaqDaj qengtaHvIS je, qontaHvIS. pa' qeSDu' rurjaj qechmey. pa' qechmeydaj qengtaHvIS. bIHeghpu'. SIbI' vaghDaj qeylIS qa' 'e' vIHar. ÷ beltlheghDaj qeylIS qab 'e' luQoyDI'. ÷ *Hero*vaD nuQbogh qonDaj qengtaHvIS. ÷ ",
+                "to": "tlh-Latn"
+            },
+            {
+                "text": "   ;  \"                               ÷      ÷ **    ÷ ",
+                "to": "tlh-Piqd"
+            },
+            {
+                "text": "Mahuʻinga ʻo e Feituʻú; Lauiafe; Laungeau; ʻE toko hongofulu; Ngaahi ʻIunití; Tenths; Laungeau; ʻA e toko taha afé; Fakatokolahi; x10 ʻUnuakiʻi ʻa e mataʻifika fika 1 ki he tafaʻaki toʻohemá; x100 ʻUnuakiʻi ʻa e mataʻifika ʻe 2 ki toʻohemá; x1000 ʻUnuakiʻi ʻa e mataʻifika ʻe 3 ki toʻohemá; Vahevahe; ÷10 ʻUnuakiʻi ʻa e mataʻifika 1 ki he toʻomataʻú; ÷100 ʻUnuakiʻi ʻa e mataʻifika ʻe 2 ki toʻomataʻú; ÷1000 ʻUnuakiʻi ʻa e mataʻifika ʻe 3 ki toʻomataʻú; ",
+                "to": "to"
+            },
+            {
+                "text": "Yer Değeri; Binlerce; Yüzlerce; Onlarca; Birimler; Onda biri; Yüzlercesi; Binde biri; Çarpma; x10 Rakamları 1 basamak sola taşıyın; x100 Rakamları 2 basamak sola taşıyın; x1000 Rakamları 3 basamak sola taşıyın; Bölme; ÷10 1 basamaklı basamakları sağa doğru hareket ettirin; ÷100 Basamakları 2 basamak sağa hareket ettirin; ÷1000 Basamakları 3 basamak sağa taşıyın; ",
+                "to": "tr"
+            }
+        ];

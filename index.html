@@ -1,0 +1,105 @@
+﻿<html lang="en"><head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="Phil Aldridge" />
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!--<link rel="stylesheet" href="./styles/main.css" />-->
+
+<meta name="description" content="Translation Mat" />
+<!--TODO FAVicon
+<link rel="icon" type="image/png" href="./favicon.png" sizes="64x64" />
+<link rel="apple-touch-icon" href="./favicon.png" sizes="64x64" />-->
+<title>Translation Mats</title>
+</head>
+<body class="text-center">
+	<nav class="navbar bg-light">
+    	<div class="container row g-1">
+            <a class="navbar-brand col col-1" href="../">
+              <img src="../assets/favicon.png" alt="" width="2rem">
+            </a>
+            
+           
+                <select class="form-select col col-3" aria-label="Default select example" id="topicSelect">
+                  <option selected>Choose a topic</option>
+				  <optgroup label="Number and Proportion">
+					  <option value="numnames">Names of Numbers</option>
+					  <option value="operations">Operations</option>
+					  <option value="placevalue">Place Value</option>
+					  <option value="fdp">Fractions, Decimals, Percentage, Ratio</option>
+					  <option value="numtypes">Types of Number</option>
+					  <option value="round">Rounding and Estimation</option>
+					  <option value="powers">Squares, Cubes, Roots and Powers</option>
+				  </optgroup>
+                  <optgroup label="Shape, Space and Measure">
+                      <option value="2Dshapes">2D Shapes</option>
+                      <option value="3Dshapes">3D Shapes</option>
+                      <option value="pav">Perimeter, Area, Volume</option>
+                      <option value="geoterms">Geometric Terms</option>
+					  <option value="transformations">Transformations and Symmetry</option>
+                  </optgroup>
+				  <optgroup label="Algebra">
+				  </optgroup>
+				  <optgroup label="Data and Probability">
+					<option value="mmmr">Averages and Spread</option>
+					<option value="charts">Types of Chart/Graph</option>
+				  </optgroup>
+                </select>
+    
+                <select class="form-select col col-3" aria-label="Default select example" id="languageSelect">
+                  <option selected>Choose a language</option>
+				  <option value="">No translation</option>
+                </select>
+                
+                <button type="button" class="btn btn-secondary col col-2" onclick="loadiframe()">Create Sheet</input>
+                <button type="button" class="btn btn-primary col col-2" onclick="printSheet()">Print Sheet</input>
+            
+        </div>
+    </nav>
+   <iframe src="operations.html?languagecode=es" id="content" class="w-100 align-items-center" style="">
+   		
+   </iframe>
+
+	
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="languages.html"></script>
+<script>
+var iframe = document.getElementById("content");
+content.setAttribute("style","height:"+Math.round(iframe.offsetWidth*0.707));
+
+
+function loadiframe() {
+	var site =  document.getElementById("topicSelect").value +".html?languagecode="+document.getElementById("languageSelect").value;
+	console.log(site);
+	iframe.src = site;
+}
+
+//Sort languages alphabetically
+const langArray = [];
+for (const [key, value] of Object.entries(languages)) {
+	langArray.push([key,value.name+" - "+value.nativeName]);
+}
+langArray.sort(function(a,b) { 
+  if (a[1]< b[1]) {    return -1;  }
+  if (a[1]> b[1]) {    return 1;  }
+  // names must be equal
+  return 0;
+});
+
+//For each language, add an option in topicSelect group
+for(let i=0;i<langArray.length;i++){
+	var option = document.createElement("option");
+	option.value = langArray[i][0];
+	option.textContent = langArray[i][1];
+	document.getElementById("languageSelect").appendChild(option);
+}
+
+function printSheet(){
+	iframe.contentWindow.print();
+}
+</script>
+
+</html>

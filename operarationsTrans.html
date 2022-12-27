@@ -1,0 +1,398 @@
+var translations = [
+            {
+                "text": "Càlculs; Afegeix/A més; Resta/Menys; Multiplica/Vegades; Divideix/Comparteix; Recompte; Ordre; Mesura; És igual; ",
+                "to": "ca"
+            },
+            {
+                "text": "Výpočty; Přidat/Plus; Odečíst/minus; Násobit/Krát; Rozdělit/Sdílet; Počítat; Objednávka; Měření; Rovná se; ",
+                "to": "cs"
+            },
+            {
+                "text": "Cyfrifiadau; Ychwanegu /Plus; Tynnu/Minws; Lluosi/Amserau; Rhannu/Rhannu; Cyfrif; Gorchymyn; Mesur; Yn gyfartal; ",
+                "to": "cy"
+            },
+            {
+                "text": "Beregninger; Tilføj/plus; Træk /minus; Multiplicere / Gange; Opdele / dele; Tælle; Bestil; Foranstaltning; Ligestiller; ",
+                "to": "da"
+            },
+            {
+                "text": "Berechnungen; Hinzufügen/Plus; Subtrahieren/Minus; Multiplizieren/Zeiten; Teilen/Teilen; Zählen; Bestellen; Maßnahme; Gleich; ",
+                "to": "de"
+            },
+            {
+                "text": "ހިސާބު/؛ އެޑް/ޕްލަސް؛ އުނި/މައިނަސް؛ ގުނައި/ވަގުތު؛ ބަހާ/ޝެއާ؛ ގުނާއަދަދު ކުރުން؛ ތަރުތީބު؛ މިންނު؛ ހަމަހަމަވުން؛ ",
+                "to": "dv"
+            },
+            {
+                "text": "Υπολογισμοί; Προσθήκη/Συν; Αφαίρεση/Μείον. Πολλαπλασιάστε/φορές. Διαίρεση/κοινή χρήση. Μέτρησε; Παραγγελία; Μέτρο; Ισούται με; ",
+                "to": "el"
+            },
+            {
+                "text": "Calculations; Add/Plus; Subtract/Minus; Multiply/Times; Divide/Share; Count; Order; Measure; Equals; ",
+                "to": "en"
+            },
+            {
+                "text": "Cálculos; Añadir/Más; Restar/Menos; Multiplicar/Veces; Dividir/Compartir; Contar; Orden; Medida; Iguales; ",
+                "to": "es"
+            },
+			{
+                "text": "Berekeningen; Toevoegen/Plus; Aftrekken/Minnen; Vermenigvuldigen/Malen; Delen/Delen; Tellen; Orde; Maatregel; Gelijk aan; ",
+                "to": "nl"
+            },
+            {
+                "text": "ଗଣନା; ଯୋଡନ୍ତୁ/ପ୍ଲସ୍; ବିୟୋଗ/ମାଇନସ୍; ଗୁଣନ/ସମୟ; ବିଭାଜନ/ଅଂଶୀଦାର କରନ୍ତୁ; ଗଣନା; ଅର୍ଡର; ମାପ; ସମାନ; ",
+                "to": "or"
+            },
+            {
+                "text": "Cálculos yá; Añadir yá Más; Restar yá Menos; Multiplicar yá bes; Gi yá t'uni; Contar; Ya; Medida; Iguales; ",
+                "to": "otq"
+            },
+            {
+                "text": "ਗਣਨਾ; ਸ਼ਾਮਲ/ ਪਲੱਸ; ਘਟਾਓ/ਘਟਾਓ; ਗੁਣਾ/ਵਾਰ; ਵੰਡੋ/ਸਾਂਝਾ ਕਰੋ; ਗਿਣਤੀ; ਆਰਡਰ; ਮਾਪੋ; ਬਰਾਬਰ; ",
+                "to": "pa"
+            },
+            {
+                "text": "Obliczenia; Dodaj/Plus; Odejmij/Minus; Mnożenie/razy; Dziel/Dziel się; Policz; Zamówienie; Miara; Równa się; ",
+                "to": "pl"
+            },
+            {
+                "text": "محاسبات / ؛ اضافه کردن / به علاوه؛ زیر مجموعه / منهای; ضرب / بار; تقسیم / اشتراک گذاری؛ تعداد دفعات مشاهده شده; سفارش; اندازه گیری; برابر؛ ",
+                "to": "prs"
+            },
+            {
+                "text": "محاسبه / ؛ Add/Plus ؛ خلاصه / منسخ ؛ ضرب / ټایمز ؛ وېش / شریکول ؛ شمېرنه ؛ ترتیب ؛ اندازه ګیری ؛ برابرونه ؛ ",
+                "to": "ps"
+            },
+            {
+                "text": "Cálculos; Adicionar/Mais; Subtrair/Menos; Multiplicar/Tempos; Dividir/Compartilhar; Contagem; Ordem; Medida; Iguais; ",
+                "to": "pt"
+            },
+            {
+                "text": "Cálculos; Adicionar/Mais; Subtrair/Menos; Multiplicar/vezes; Dividir/Partilhar; Contagem; Ordem; Medida; É igual; ",
+                "to": "pt-PT"
+            },
+			{
+                "text": "കണക്കുകൂട്ടലുകൾ; ചേർക്കുക/പ്ലസ്; കുറയ്ക്കുക/മൈനസ്; ഗുണിക്കുക/സമയം; പങ്കിടുക/ പങ്കിടുക; എണ്ണുക; ഓർഡർ; അളക്കുക; തുല്യം; ",
+                "to": "ml"
+            },
+            {
+                "text": "Тооцоо /тооцоо; Нэхэмжлэх/нэмэлт; Хасах/Минус; Олон дахин үржих/цаг хугацаа; Хуваах/хуваалцах; Тоолол; Дүрэм журам; Хэмж; Тэгш эрхтэй; ",
+                "to": "mn-Cyrl"
+            },
+            {
+                "text": "ᠪᠣᠳᠣᠬᠤ / ᠨᠡᠮᠡᠬᠦ; ᠬᠠᠰᠤᠬᠤ ᠠᠷᠭ᠎ᠠ / ᠬᠠᠰᠤᠬᠤ ᠠᠷᠭ᠎ᠠ ; ᠰᠠᠭᠤᠬᠤ ᠬᠠᠤᠯᠢ / ᠳᠠᠬᠢᠨ ᠲᠣᠭ᠎ᠠ ᠬᠤᠪᠢᠶᠠᠯᠴᠠᠨ ᠡᠳ᠋ᠯᠡᠬᠦ ᠡᠴᠡ ᠭᠠᠳᠠᠨ᠎ᠠ ᠲᠣᠭ᠎ᠠ ᠶᠢ ᠪᠣᠳᠣᠨ᠎ᠠ ᠵᠠᠬᠢᠶᠠᠯᠠᠭ᠎ᠠ ᠶᠢᠨ ᠬᠠᠭᠤᠳᠠᠰᠤ; ᠬᠡᠮᠵᠢᠯᠲᠡ; ᠲᠡᠢ᠌ᠮᠦ ᠲᠡᠩᠴᠡᠭᠦᠦ ",
+                "to": "mn-Mong"
+            },
+            {
+                "text": "गणना; जोडा/अधिक; वजा/वजा; गुणाकार/टाइम्स; भागा/भागा; मोजा; आदेश; मोजा; बरोबरी; ",
+                "to": "mr"
+            },
+            {
+                "text": "Pengiraan; Tambah/Tambah; Tolak/Tolak; Darab/Kali; Bahagikan/Kongsi; Kira; Perintah; Ukur; Sama; ",
+                "to": "ms"
+            },
+            {
+                "text": "Kalkoli; Żid / Plus; Naqqas/Nieqes; Immoltiplika / Times; Aqsam/Aqsam; għadd; Ordni; Il-miżura; Ugwali; ",
+                "to": "mt"
+            },
+            {
+                "text": "Xam/Xam Cov Lus Teb; Ntxiv/Plus; Rho/Rho tawm; Multiply/Time; Faib/Faib tawm; Suav; Kev Txiav Txim; Ntsuas; Sib npaug zos; ",
+                "to": "mww"
+            },
+            {
+                "text": "တွက်ချက်ခြင်း/၊ ဖြည့်/ပလပ်၊ Subtract/minus၊ Multi/Times, Divide/Shar: အရေအတွက်တွက်ပါ။ အမိန့်အမိန့်အမိ အတိုင်းအတာ၊ တန်းတူဖြစ်သည်။ ",
+                "to": "my"
+            },
+            {
+                "text": "Beregninger; Legg til / pluss; Trekk fra/minus. Multipliser/ganger; Del/del; Antall; Rekkefølge; Mål; Er lik; ",
+                "to": "nb"
+            },
+			{
+                "text": "Расчеты; Добавить/Плюс; Вычитать/Минус; Умножение/Умножение; Разделить/Поделиться; Количество; Заказ; Мера; Равные; ",
+                "to": "ru"
+            },
+            {
+                "text": "Výpočty; Pridať/doplniť; Odpočítať/mínus; Násobenie/časy; Rozdeliť/rozdeliť; Počítať; Poriadok; Opatrenie; Rovná sa; ",
+                "to": "sk"
+            },
+            {
+                "text": "Izračuni; Dodaj/Plus; Odštej/minus; Pomnozi/krat; Razdeli/deli; Štetje; Naročilo; ukrep; Enako; ",
+                "to": "sl"
+            },
+            {
+                "text": "Fua; Faaopoopo/Plus; Toese/Minus; Faateleina/Taimi; Vaevae/Faasoa atu; Faitau; Faatulagaga; Fua; Tutusa; ",
+                "to": "sm"
+            },
+            {
+                "text": "Xisaabinta; Add /Plus; Jaro / minus, Tarmiya / Times; Qaybin/Share; Tiri; Amarka; Cabbiraad; Ekaato; ",
+                "to": "so"
+            },
+            {
+                "text": "Llogaritjet; Shto/Plus; Subtract/Minus; Shumëzohen/kohët; Përça/ndaj; Numëro; Urdhër; Masa; Të barabartë; ",
+                "to": "sq"
+            },
+            {
+                "text": "Прорачуни; Додај/плус; Одузимање/минус; Множи/тајмс; Подели/дели; Броји; Поруџбина; Мера; Једнако; ",
+                "to": "sr-Cyrl"
+            },
+            {
+                "text": "Proračuni; Dodaj/plus; Oduzimanje/minus; Množi/tajms; Podeli/deli; Broji; Porudžbina; Mera; Jednako; ",
+                "to": "sr-Latn"
+            },
+            {
+                "text": "Beräkningar; Lägg till / Plus; Subtrahera / minus; Multiplicera / gånger; Dela/dela; Räkna; Beställ; Mäta; Lika; ",
+                "to": "sv"
+            },
+			{
+                "text": "계산; 추가/추가; 빼기/빼기; 곱하기/시간; 분할/공유; 카운트; 주문; 측정; 동등한; ",
+                "to": "ko"
+            },
+            {
+                "text": "ژماردن; زیادکردن/زیادکردن؛ لاوەکی/کەم؛ فرە/کات؛ دابەشکردن/هاوبەشکردن؛ ژماردن؛ ڕیزکردن؛ پێوانە؛ یەکسانە؛ ",
+                "to": "ku"
+            },
+            {
+                "text": "Эсептөөлөр ; кошуу / Плюс; Субтракт/Минус; Көбөйтүү /Таймс; бөлүштүрүү / үлүшү; Эсептөө; Тартип; Өлчөө; Бирдей; ",
+                "to": "ky"
+            },
+            {
+                "text": "ການຄິດໄລ່; ເພີ່ມ/Plus; ລົບລ້າງ/Minus; ຫວົງ/Times; ແບ່ງ/ແບ່ງປັນ; ນັບ; ລະບຽບ; ວັດແທກ; ເທົ່າທຽມກັນ; ",
+                "to": "lo"
+            },
+            {
+                "text": "Skaičiavimai; Pridėti / plius; Atimti/minusą; Daugintis/ daugintis; Padalinti / bendrinti; Skaičius; Užsakymas; Priemonė; Lygūs; ",
+                "to": "lt"
+            },
+            {
+                "text": "Aprēķini; Pievienot/plus; Atņemt/mīnus; Reizināt/reizes; Sadalīt/kopīgot; Skaits; Pasūtījums; Pasākums; Vienāds ar; ",
+                "to": "lv"
+            },
+            {
+                "text": "数/。 加/加。 减法/减法。 乘法/倍数。 除/分享。 数也; 订单。 度之; 犹之也; ",
+                "to": "lzh"
+            },
+            {
+                "text": "Kajy; Ampio/Plus; Alefaso/Minus; Multiply/Times; Mizara/Mizara; Isa; Lamina; Fepetra; Equals; ",
+                "to": "mg"
+            },
+            {
+                "text": "Tatau; Tāpiri/Tāpiri; Ā-roto/Tango; Multiply/Times; Divide/Share; Count; Order; Measure; Ōrite; ",
+                "to": "mi"
+            },
+			{
+                "text": "Berekeninge; Voeg by/Plus; Trek /Minus af; Vermenigvuldig/Tye; Verdeel/Deel; Tel; Bestel; Meet; Gelyk aan; ",
+                "to": "af"
+            },
+            {
+                "text": "ስሌቶች; ጨምሮ/ፕላስ፤ Subsubtract/ሚኑስ፤ ብዙ ዘመን/ዘመን፤ ከፋፍሎ/ሼር ያድርጉ፤ ቍጥር፤ ስርዓት፤ መለኪያ፤ እኩል፤ ",
+                "to": "am"
+            },
+            {
+                "text": "الحسابات; إضافة/زائد; طرح / ناقص ؛ ضرب / مرات; تقسيم/اقتساء; العد. النظام; القياس; يساوي. ",
+                "to": "ar"
+            },
+            {
+                "text": "গণনা; যোগ/যোগ; বিয়োগ/বিয়োগ; পূৰণ/সময়; বিভাজন/ভাগ বতৰা; গণনা; অৰ্ডাৰ; জোখক; সমান; ",
+                "to": "as"
+            },
+            {
+                "text": "Hesablamalar; Əlavə Et/Plus; Subtract/Minus; Çoxaltmaq/Zaman; Böl/Paylaş; Say; Sifariş; Ölçü; Bərabərlər; ",
+                "to": "az"
+            },
+            {
+                "text": "Иҫәпләүҙәр; Адд/Плюс; Субтракт/Минус; Мультипли /Times; Бүлеү/Уртаҡлашыу; Граф; Орден; Үлсәме; Тиңдәр; ",
+                "to": "ba"
+            },
+            {
+                "text": "Изчисления; Добавяне/плюс; Изваждане/Минус; Умножете/Пъти; Разделете/Споделяйте; Брой; Поръчка; Мярка; Равно на; ",
+                "to": "bg"
+            },
+            {
+                "text": "গণনা; যোগ/প্লাস; বিয়োগ/বিয়োগ; গুণ/বার; ভাগ করুন/ভাগ করুন; গণনা; অর্ডার; পরিমাপ; সমান; ",
+                "to": "bn"
+            },
+            {
+                "text": "རྩིས་རྒྱག་པ།// ཁ་སྣོན་དང་ཁ་སྣོན་བྱས་ཡོད། འཕྲི་འཐེན་དང་འཕྲི་འཐེན་བྱས་པ། ལྡབ་འགྱུར་གྱིས་འཕར་བ་དང་དུས་རབས་ཀྱི་རང་བཞིན བགོ་བཤའ་རྒྱག་པ་དང་བགོ་བཤའ་རྒྱག་པ གྲངས་ཀ་རྩིས་རྒྱག་པ། གོ་རིམ་ལྡན་པ། བྱེད་ཐབས་སྤྱོད་པ། འདྲ་མཉམ་ཡིན་པ། ",
+                "to": "bo"
+            },
+			{
+                "text": "Kalkuluak; Gehitu/Gehiago; Errestatu/gutxiago; Biderkatu/ Batzuetan; Zatitzea/ Partekatzea; Kontatu; Ordena; Neurria; Berdinak; ",
+                "to": "eu"
+            },
+            {
+                "text": "محاسبات ; اضافه کردن / به علاوه; تفریق/ منهای؛ ضرب/ بار؛ تقسیم /اشتراک گذاری؛ شمارش؛ سفارش؛ اندازه گیری؛ برابر است؛ ",
+                "to": "fa"
+            },
+            {
+                "text": "Laskelmat; Lisää/plus; Vähennä/miinus; Kerro/kertaa; Jaa/jaa; Määrä; Järjestys; Mitta; Yhtä suuri kuin; ",
+                "to": "fi"
+            },
+            {
+                "text": "Kalkulasyon; Magdagdag/Plus; Subtract/Minus; Multiply/Times; Hatiin/Ibahagi; Bilang; Order; Sukatin; Pantay-pantay; ",
+                "to": "fil"
+            },
+            {
+                "text": "iTuvatuva; Kuria/Plus; Vakalailaitaka/Minus; Levu/Gauna; Wasei/Wasea; Wilika; Vakarau; Vakarautaka; Tautauvata; ",
+                "to": "fj"
+            },
+            {
+                "text": "Calculations; Add/Plus; Subtract/Minus; Multiply/Times; Divide/Share; Tel/teljið; Order; Measure; Øll eru; ",
+                "to": "fo"
+            },
+            {
+                "text": "Calculs; Ajouter/Plus; Soustraire/Moins; Multiplier/Multiplier; Diviser/Partager; Compter; Ordre; Mesure; Égaux; ",
+                "to": "fr"
+            },
+            {
+                "text": "Calculs; Ajouter/Plus; Soustraire/Moins; Multiplier/Fois; Diviser/Partager; Compter; Ordre; Mesure; Est égal à; ",
+                "to": "fr-CA"
+            },
+            {
+                "text": "Ríomhanna; Cuir Leis / Móide; Dealaigh/Lúide; Iolraigh/Amanna; Roinn/Comhroinn; Líon; ordú; beart; Cothrom; ",
+                "to": "ga"
+            },
+			{
+                "text": "Te mau numeraraa; Add/Plus; I raro i te fenua/Minus ; Multiply/Times; 10.PH&pf 108:13. A tai'o ; te nahonaho ; Te mau himene na te pŭpŭ himene no te mau a'oraa i ni'a i te ",
+                "to": "ty"
+            },
+            {
+                "text": "ھېسابلاش/؛ قوشماق/قوشماق؛ چېكىنىش/چېكىنىش؛ كۆپەيتىش/قېتىم قىلىش؛ بۆلۈش/ئورتاق بەھرىمان بولۇش؛ ساناقلىق؛ زاكات؛ ئۆلچەش ؛ تەڭدىشى ؛ ",
+                "to": "ug"
+            },
+            {
+                "text": "Розрахунки; Додати/плюс; Віднімання/мінус; Помножити/помножити на раз; Розділити/поділитися; Підрахувати; Замовити; Міра; Дорівнює; ",
+                "to": "uk"
+            },
+            {
+                "text": "حساب; اضافہ/جمع کریں؛ تفریق/منفی؛ ضرب/اوقات؛ تقسیم کریں/شیئر کریں؛ شمار کریں؛ ترتیب؛ پیمائش کریں؛ مساوی؛ ",
+                "to": "ur"
+            },
+            {
+                "text": "Hisoblashlar; Qo'shish/Plus; Subtrakt/Minus; Koʻpaytirish/marta; Bo'lish/Bo'lish; Sanash; Buyurtma; o'lchash; Tenglar; ",
+                "to": "uz"
+            },
+            {
+                "text": "Tính toán; Thêm/Cộng; Trừ/Trừ; Nhân/Lần; Chia/Chia sẻ; Đếm; Trật tự; Đo lường; Bằng nhau; ",
+                "to": "vi"
+            },
+            {
+                "text": "Cálculos leti'; Añadir leti' Más; Restar leti' Menos; Multiplicar leti' Óoxten; Ja'atsal leti' ts'aiko'on; Xook; Orden; P'iss bey; Iguales; ",
+                "to": "yua"
+            },
+            {
+                "text": "計算; 加/加; 減法/減法; 乘法/倍數; 除/分享; 計數; 訂單; 測量; 等於; ",
+                "to": "yue"
+            },
+            {
+                "text": "计算;加/加;减法/减法;乘法/倍数;除/分享;计数;订单;测量;等于;",
+                "to": "zh-Hans"
+            },
+			{
+                "text": "Útreikningar; Bæta við/plús; Draga frá/mínus; Margföldun/sinnum; Skipta/deila; Telja; Pöntun; Mál; Jafnir; ",
+                "to": "is"
+            },
+            {
+                "text": "Calcoli; Aggiungi/Più; Sottrai/Meno; Moltiplicare/Volte; Dividere/Condividere; Conteggio; Ordine; Misura; Uguale; ",
+                "to": "it"
+            },
+            {
+                "text": "ᓈᓴᐅᓯᕆᓃᑦ; ᐃᓚᓯᓗᑎᑦ/ᐅᖓᑖᓄᐊᖅᓯᓗᑎᑦ; ᐃᓚᓐᖓᕐᓗᒍ/ᒥᑭᓪᓕᒋᐊᕐᓗᒍ; ᐊᒥᓱᑎᒍᑦ/ᖃᖓᒃᑯᑦ; ᐊᕕᒃᑐᐃᓂᖅ/ᐊᒥᖅᑳᕐᓂᖅ; ᓈᓴᕐᓗᒋᑦ; ᑎᓕᓯᔾᔪᑎ; ᐆᒃᑐᕋᕐᓗᒍ; ᓇᓕᒧᒌᒃᑐᑦ; ",
+                "to": "iu"
+            },
+            {
+                "text": "naasausiriniq; ilasiniq/plus; ilanngarlugu/minus; amisuruqtillugit/piviksait; avikturlugit/amiqqaarutingit; naasaqtauningit; tilisijjuti; uukturarlugu; ajjigiit; ",
+                "to": "iu-Latn"
+            },
+            {
+                "text": "計算;追加/プラス;減算/マイナス;乗算/時間;分割/共有;カウント;注文;測定;等しい。",
+                "to": "ja"
+            },
+            {
+                "text": "გამოთვლები; დამატება/პლუსი; გამოკლება/მინუსი; გამრავლება/დრო; გაყოფა/გაზიარება; რაოდენობა; შეკვეთა; ზომა; თანაბარი; ",
+                "to": "ka"
+            },
+            {
+                "text": "Есеп айырысулар; Қосу/Қосу; Алу/Алу; Көбейту/Уақыт; Бөлу/Ортақ пайдалану; Санау; Бұйрық; Өлшем; Тең; ",
+                "to": "kk"
+            },
+            {
+                "text": "គណនា; បន្ថែម/Plus; ២. តម្រង/Minus; Multiply/Times; ចែក/Share; រាប់; លំដាប់; វាស់; ស្មើគ្នា; ",
+                "to": "km"
+            },
+            {
+                "text": "Hesab; Lêzêdekirin/Plus; Derxistin/Kêmasî; Pirrengî/Dem; Dabeşkirin/Parvekirin; Hejmartin; Rêz bike; Pîvan; Wekhev e; ",
+                "to": "kmr"
+            },
+			{
+                "text": "ગણતરીઓ; ઉમેરો/પ્લસ; બાદબાકી/બાદબાકી; ગુણાકાર/સમય; વિભાજિત કરો/વહેંચો; ગણતરી; ક્રમ; માપ; બરાબર; ",
+                "to": "gu"
+            },
+            {
+                "text": "חישובים; הוסף/פלוס; חיסור/מינוס; כפל/פעמים; חלוקה/שיתוף; לספור; סדר; למדוד; שווה; ",
+                "to": "he"
+            },
+            {
+                "text": "परिकलन; जोड़ें / प्लस; घटाएँ/घटाएँ; गुणा / टाइम्स; विभाजित करें / साझा करें; गिनती; आदेश; उपाय; बराबर है; ",
+                "to": "hi"
+            },
+            {
+                "text": "Izračuni; Dodaj/Plus; Oduzimanje/minus; Množenje/vremena; Podijeli/podijeli; Broji; Red; Mjera; Jednako je; ",
+                "to": "hr"
+            },
+            {
+                "text": "Wobličenja; Hinzufügen/Plus; Subtrahieren/Minus; multiplikować/časy; Dźěla/dźěle; Ličić; Skazanki; Maßnahme; Hnydom; ",
+                "to": "hsb"
+            },
+            {
+                "text": "Kalkil ; Ajoute / Plus; Soustrè / Minus; Miltipliye / Times; Divize/Pataje; Konte; Lòd; Mezi; Egal; ",
+                "to": "ht"
+            },
+            {
+                "text": "Számítások; Hozzáadás/Plusz; Kivonás/mínusz; Szorzás/szorzás; Osztás/megosztás; Gróf; Rend; Intézkedés; Egyenlők; ",
+                "to": "hu"
+            },
+            {
+                "text": "Հաշվարկներ; Ավելացնել/Պլյուս; Սուբտրակտ/Մինուս; Բազմապատկում/Ժամանակներ; Բաժանել/կիսել; Հաշվել; Կարգ; Չափում; Հավասար է; ",
+                "to": "hy"
+            },
+            {
+                "text": "Perhitungan; Tambah/Plus; Kurangi/Minus; Kalikan/Kali; Bagi/Bagikan; Hitung; Pesan; Mengukur; Sama dengan; ",
+                "to": "id"
+            },
+			{
+                "text": "கணக்கீடுகள் ; சேர்/பிளஸ்; கழித்தல்/ கழித்தல்; பெருக்கு/ முறை; வகுத்தல்/பகிர்தல்; எண்ணிக்கை; ஆர்டர்; அளவிடவும்; சமம்; ",
+                "to": "ta"
+            },
+            {
+                "text": "లెక్కలు; జోడించు/ప్లస్; తీసివేయడం/మైనస్; గుణించండి/సమయాలు; విభజించండి/పంచుకోండి; కౌంట్; ఆర్డర్; కొలత; సమానులు; ",
+                "to": "te"
+            },
+            {
+                "text": "การคํานวณ; เพิ่ม/บวก; ลบ/ลบ; คูณ/ครั้ง; หาร/แชร์; นับ; สั่งซื้อ; วัด; เท่ากับ; ",
+                "to": "th"
+            },
+            {
+                "text": "ቀመር/፣ ወሲኽካ/ወሲኽካ፣ ንኡስ/ሚኑስ፣ እናበዝሐ/ታይም፣ መቐለ/መቐለ፣ ይቝጸር፣ ስርዓት፣ መለክዒ፣ ማዕረ እዩ፣ ",
+                "to": "ti"
+            },
+            {
+                "text": "Hasaplamalar; Goşmak/Goşmak/Goşmak; Subtract/Minus; Köpeltmek/Gezekler; Paýlaş/Bölüşdir; Sanamak; Buýruk; Ölçeg; deňleşdirýär; ",
+                "to": "tk"
+            },
+            {
+                "text": "*tlh/aw'DIyo* quv. /HISlaH,'. vIjatlh: tlhInganp/u'. / mach bIHeghHa' 'e' vIHar. / SuH,'a' Hoch. Hero. ngemmey QanwI' 'e' yIch QI'yaH. pe'vIl porghDaj qengtaHvIS. ",
+                "to": "tlh-Latn"
+            },
+            {
+                "text": "*/*  / : / /     /            ",
+                "to": "tlh-Piqd"
+            },
+            {
+                "text": "Fikaʻi; Tānaki/Tānaki; Toʻo/ʻIkai; Fakatokolahi/Taimi; Vahevahe/Vahevahe; Lau; Maau; Fua; Tuʻunga Tatau; ",
+                "to": "to"
+            },
+            {
+                "text": "Hesaplamalar; Ekle/Artı; Çıkarma/Eksi; Çarpma/Zaman; Bölüştürme/Paylaşma; Sayım; Sipariş; Ölçüm; Eşittir; ",
+                "to": "tr"
+            }
+		]
