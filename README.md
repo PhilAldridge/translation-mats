@@ -3,6 +3,6 @@ In 2022 I recieved several students from Ukraine, with varying levels of skill i
 
 The app calls the Microsoft Translation API in Microsoft Azure to get translations of the words, which are then added to the DOM using Javascript.
 
-View the website now at https://elasticmaths.epizy.com/translationmats/
+View the website now at https://elasticmaths.epizy.com/translationmats/ (to create a mat, choose a topic, then a language in the drop down menus)
 
 ![This is an image](transmat.JPG)
