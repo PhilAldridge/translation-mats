@@ -5,7 +5,7 @@
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<!--<link rel="stylesheet" href="./styles/main.css" />-->
+<link rel="stylesheet" href="./styles.css" />
 
 <meta name="description" content="Translation Mat" />
 <!--TODO FAVicon
@@ -13,13 +13,18 @@
 <link rel="apple-touch-icon" href="./favicon.png" sizes="64x64" />-->
 <title>Translation Mats</title>
 </head>
-<body class="text-center">
-	<nav class="navbar bg-light">
-    	<div class="container row g-1">
+<body class="text-center" style="background-color: bisque;">
+	<div style="display: flex; background-color: black; flex-direction: row; justify-content: space-evenly; padding: 20px; position: sticky; top: 0;">
+		<a href="/index.html">Math Translator</a>
+		<a href="./text-translator.html">TextTranslator</a>
+	</div>
+	<nav class="navbar bg-light" style=" display: flex; flex-direction: column; position: static;">
+    	<div class="container row g-1" style="background-color: lightcoral; padding:30px; border-radius: 20px;" >
             <a class="navbar-brand col col-1" href="../">
               <img src="../assets/favicon.png" alt="" width="2rem">
             </a>
             
+				
            
                 <select class="form-select col col-3" aria-label="Default select example" id="topicSelect">
                   <option selected>Choose a topic</option>
@@ -52,12 +57,12 @@
 				  <option value="">No translation</option>
                 </select>
                 
-                <button type="button" class="btn btn-secondary col col-2" onclick="loadiframe()">Create Sheet</input>
-                <button type="button" class="btn btn-primary col col-2" onclick="printSheet()">Print Sheet</input>
+                <button type="button" class="btn btn-dark col col-2" style="margin-top: 10px;" onclick="loadiframe()">Create Sheet</input>
+                <button type="button" class="btn btn-outline-success col col-2"  style="margin-top: 10px;" onclick="printSheet()">Print Sheet</input>
             
         </div>
     </nav>
-   <iframe src="operations.html?languagecode=es" id="content" class="w-100 align-items-center" style="">
+   <iframe src="operations.html?languagecode=es" id="content" class="w-100 align-items-center" style="background-color: lightgreen;">
    		
    </iframe>
 
@@ -68,7 +73,8 @@
 <script src="languages.html"></script>
 <script>
 var iframe = document.getElementById("content");
-content.setAttribute("style","height:"+Math.round(iframe.offsetWidth*0.707));
+// content.setAttribute("style","height:"+Math.round(iframe.offsetWidth*0.707));
+iframe.setAttribute("style", "height:" + Math.round(iframe.offsetWidth * 0.707));
 
 
 function loadiframe() {

@@ -5,3 +5,13 @@ table, th, td {
   border: 1px solid black;
   vertical-align: middle;
 }
+
+a {
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: wavy;
+}
+
+a:hover {
+  color: chartreuse;
+}
